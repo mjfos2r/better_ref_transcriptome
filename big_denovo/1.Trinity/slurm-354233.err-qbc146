@@ -1,9 +1,0 @@
-Loading trinity/2.8.6/intel-19.0.5
-  Loading requirement: gcc/9.3.0 bowtie2/2.3.5.1/gcc-9.3.0 python/3.7.6
-    samtools/1.10/intel-19.0.5 jdk/1.8.0_222/intel-19.0.5
-Currently Loaded Modulefiles:
- 1) intel/19.0.5                           6) samtools/1.10/intel-19.0.5  
- 2) mvapich2/2.3.3/intel-19.0.5(default)   7) jdk/1.8.0_222/intel-19.0.5  
- 3) gcc/9.3.0                              8) trinity/2.8.6/intel-19.0.5  
- 4) bowtie2/2.3.5.1/gcc-9.3.0              9) r/3.6.2/intel-19.0.5        
- 5) python/3.7.6                          
