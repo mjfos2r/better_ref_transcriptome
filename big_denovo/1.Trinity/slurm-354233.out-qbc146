@@ -1,0 +1,1312 @@
+###########################################
+Tue May 23 09:41:17 CDT 2023
+###########################################
+##		starting job		##
+###########################################
+ 
+loading modules
+ 
+ 
+###########################################
+currently in: /home/mjfos2r/clover_project/final_attempt/3.denovo/denovo-no-rRNA/1.Trinity
+moving to /work/mjfos2r/final_volley/rRNA_filtered_reads
+currently in: /work/mjfos2r/final_volley/rRNA_filtered_reads
+ 
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.8.6
+
+
+
+Single read files: $VAR1 = [
+          'whitelisted_merged.trimmed.TR09_1.fq.gz',
+          'whitelisted_merged.trimmed.TR14_1.fq.gz',
+          'whitelisted_merged.trimmed.TR18_1.fq.gz',
+          'whitelisted_merged.trimmed.TR20_1.fq.gz',
+          'whitelisted_merged.trimmed.TR24_1.fq.gz',
+          'whitelisted_merged.trimmed.TR28_1.fq.gz',
+          'whitelisted_merged.trimmed.TR30_1.fq.gz',
+          'whitelisted_merged.trimmed.TR32_1.fq.gz',
+          'whitelisted_merged.trimmed.TR48_1.fq.gz',
+          'whitelisted_merged.trimmed.TR65_1.fq.gz',
+          'whitelisted_merged.trimmed.TR68_1.fq.gz',
+          'whitelisted_merged.trimmed.TR70_1.fq.gz',
+          'whitelisted_merged.trimmed.TR72_1.fq.gz',
+          'whitelisted_merged.trimmed.TR73_1.fq.gz',
+          'whitelisted_merged.trimmed.TR79_1.fq.gz',
+          'whitelisted_merged.trimmed.TR83_1.fq.gz',
+          'whitelisted_merged.trimmed.TR85_1.fq.gz',
+          'whitelisted_merged.trimmed.TR87_1.fq.gz',
+          'whitelisted_merged.trimmed.TR89_1.fq.gz',
+          'whitelisted_merged.trimmed.TR92_1.fq.gz',
+          'whitelisted_merged.trimmed.TR01_1.fq.gz',
+          'whitelisted_merged.trimmed.TR05_1.fq.gz',
+          'whitelisted_merged.trimmed.TR08_1.fq.gz',
+          'whitelisted_merged.trimmed.TR12_1.fq.gz',
+          'whitelisted_merged.trimmed.TR15_1.fq.gz',
+          'whitelisted_merged.trimmed.TR17_1.fq.gz',
+          'whitelisted_merged.trimmed.TR19_1.fq.gz',
+          'whitelisted_merged.trimmed.TR21_1.fq.gz',
+          'whitelisted_merged.trimmed.TR23_1.fq.gz',
+          'whitelisted_merged.trimmed.TR25_1.fq.gz',
+          'whitelisted_merged.trimmed.TR29_1.fq.gz',
+          'whitelisted_merged.trimmed.TR31_1.fq.gz',
+          'whitelisted_merged.trimmed.TR43_1.fq.gz',
+          'whitelisted_merged.trimmed.TR50_1.fq.gz',
+          'whitelisted_merged.trimmed.TR61_1.fq.gz',
+          'whitelisted_merged.trimmed.TR62_1.fq.gz',
+          'whitelisted_merged.trimmed.TR64_1.fq.gz',
+          'whitelisted_merged.trimmed.TR67_1.fq.gz',
+          'whitelisted_merged.trimmed.TR69_1.fq.gz',
+          'whitelisted_merged.trimmed.TR71_1.fq.gz',
+          'whitelisted_merged.trimmed.TR74_1.fq.gz',
+          'whitelisted_merged.trimmed.TR74_1.fq.gz',
+          'whitelisted_merged.trimmed.TR78_1.fq.gz',
+          'whitelisted_merged.trimmed.TR80_1.fq.gz',
+          'whitelisted_merged.trimmed.TR82_1.fq.gz',
+          'whitelisted_merged.trimmed.TR84_1.fq.gz',
+          'whitelisted_merged.trimmed.TR86_1.fq.gz',
+          'whitelisted_merged.trimmed.TR88_1.fq.gz',
+          'whitelisted_merged.trimmed.TR90_1.fq.gz'
+        ];
+Trinity version: Trinity-v2.8.6
+** NOTE: Latest version of Trinity is Trinity-v2.15.1, and can be obtained at:
+	https://github.com/trinityrnaseq/trinityrnaseq/releases
+
+Tuesday, May 23, 2023: 09:41:18	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /home/packages/trinity/2.8.6/intel-19.0.5/util/support_scripts/ExitTester.jar 0
+Tuesday, May 23, 2023: 09:41:19	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /home/packages/trinity/2.8.6/intel-19.0.5/util/support_scripts/ExitTester.jar 1
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR09_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR14_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR18_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR20_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR24_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR28_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR30_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR32_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR48_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR65_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR68_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR70_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR72_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR73_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR79_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR83_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR85_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR87_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR89_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR92_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR01_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR05_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR08_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR12_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR15_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR17_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR19_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR21_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR23_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR25_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR29_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR31_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR43_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR50_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR61_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR62_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR64_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR67_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR69_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR71_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR74_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR74_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR78_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR80_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR82_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR84_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR86_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR88_1.fq.gz',
+            '/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR90_1.fq.gz'
+          ]
+        ];
+
+
+Tuesday, May 23, 2023: 09:41:19	CMD: /home/packages/trinity/2.8.6/intel-19.0.5/util/insilico_read_normalization.pl --seqType fq --JM 384G  --max_cov 200 --min_cov 1 --CPU 96 --output /ddnA/work/mjfos2r/final_volley/3.denovo/denovo-no-rRNA/1.Trinity/insilico_read_normalization --max_CV 10000  --SS_lib_type F  --single /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR09_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR14_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR18_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR20_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR24_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR28_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR30_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR32_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR48_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR65_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR68_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR70_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR72_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR73_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR79_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR83_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR85_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR87_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR89_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR92_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR01_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR05_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR08_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR12_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR15_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR17_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR19_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR21_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR23_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR25_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR29_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR31_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR43_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR50_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR61_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR62_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR64_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR67_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR69_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR71_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR74_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR74_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR78_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR80_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR82_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR84_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR86_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR88_1.fq.gz,/ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR90_1.fq.gz
+-prepping seqs
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR09_1.fq.gz) >> single.fa
+CMD finished (16 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR14_1.fq.gz) >> single.fa
+CMD finished (11 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR18_1.fq.gz) >> single.fa
+CMD finished (29 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR20_1.fq.gz) >> single.fa
+CMD finished (13 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR24_1.fq.gz) >> single.fa
+CMD finished (18 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR28_1.fq.gz) >> single.fa
+CMD finished (10 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR30_1.fq.gz) >> single.fa
+CMD finished (10 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR32_1.fq.gz) >> single.fa
+CMD finished (35 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR48_1.fq.gz) >> single.fa
+CMD finished (4 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR65_1.fq.gz) >> single.fa
+CMD finished (16 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR68_1.fq.gz) >> single.fa
+CMD finished (5 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR70_1.fq.gz) >> single.fa
+CMD finished (12 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR72_1.fq.gz) >> single.fa
+CMD finished (16 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR73_1.fq.gz) >> single.fa
+CMD finished (13 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR79_1.fq.gz) >> single.fa
+CMD finished (25 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR83_1.fq.gz) >> single.fa
+CMD finished (48 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR85_1.fq.gz) >> single.fa
+CMD finished (14 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR87_1.fq.gz) >> single.fa
+CMD finished (16 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR89_1.fq.gz) >> single.fa
+CMD finished (14 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR92_1.fq.gz) >> single.fa
+CMD finished (17 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR01_1.fq.gz) >> single.fa
+CMD finished (12 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR05_1.fq.gz) >> single.fa
+CMD finished (25 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR08_1.fq.gz) >> single.fa
+CMD finished (32 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR12_1.fq.gz) >> single.fa
+CMD finished (17 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR15_1.fq.gz) >> single.fa
+CMD finished (21 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR17_1.fq.gz) >> single.fa
+CMD finished (12 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR19_1.fq.gz) >> single.fa
+CMD finished (41 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR21_1.fq.gz) >> single.fa
+CMD finished (19 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR23_1.fq.gz) >> single.fa
+CMD finished (25 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR25_1.fq.gz) >> single.fa
+CMD finished (4 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR29_1.fq.gz) >> single.fa
+CMD finished (19 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR31_1.fq.gz) >> single.fa
+CMD finished (29 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR43_1.fq.gz) >> single.fa
+CMD finished (13 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR50_1.fq.gz) >> single.fa
+CMD finished (50 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR61_1.fq.gz) >> single.fa
+CMD finished (26 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR62_1.fq.gz) >> single.fa
+CMD finished (17 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR64_1.fq.gz) >> single.fa
+CMD finished (11 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR67_1.fq.gz) >> single.fa
+CMD finished (13 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR69_1.fq.gz) >> single.fa
+CMD finished (17 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR71_1.fq.gz) >> single.fa
+CMD finished (11 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR74_1.fq.gz) >> single.fa
+CMD finished (7 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR74_1.fq.gz) >> single.fa
+CMD finished (7 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR78_1.fq.gz) >> single.fa
+CMD finished (5 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR80_1.fq.gz) >> single.fa
+CMD finished (14 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR82_1.fq.gz) >> single.fa
+CMD finished (24 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR84_1.fq.gz) >> single.fa
+CMD finished (12 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR86_1.fq.gz) >> single.fa
+CMD finished (24 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR88_1.fq.gz) >> single.fa
+CMD finished (29 seconds)
+CMD: seqtk-trinity seq -A <(gunzip -c /ddnA/work/mjfos2r/final_volley/rRNA_filtered_reads/whitelisted_merged.trimmed.TR90_1.fq.gz) >> single.fa
+CMD finished (17 seconds)
+CMD: touch single.fa.ok
+CMD finished (0 seconds)
+-kmer counting.
+-------------------------------------------
+----------- Jellyfish  --------------------
+-- (building a k-mer catalog from reads) --
+-------------------------------------------
+
+CMD: jellyfish count -t 96 -m 25 -s 45855379289  single.fa
+CMD finished (13646 seconds)
+CMD: jellyfish histo -t 96 -o jellyfish.K25.min2.kmers.fa.histo mer_counts.jf
+CMD finished (39 seconds)
+CMD: jellyfish dump -L 2 mer_counts.jf > jellyfish.K25.min2.kmers.fa
+CMD finished (107 seconds)
+CMD: touch jellyfish.K25.min2.kmers.fa.success
+CMD finished (0 seconds)
+-generating stats files
+CMD: /home/packages/trinity/2.8.6/intel-19.0.5/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads single.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 96  > single.fa.K25.stats
+-reading Kmer occurrences...
+
+ done parsing 408383614 Kmers, 404248343 added, taking 878 seconds.
+Sequence: GGGTTGGCGGCTGTGTGGGTTAis smaller than 25 base pairs, skipping
+Sequence: TTGTCTGTCCATACCAACACTAGAis smaller than 25 base pairs, skipping
+Sequence: ACAGCTTAAACGATGTTAAACis smaller than 25 base pairs, skipping
+Sequence: TTATGCTTTGGGCCGTTTACCAAis smaller than 25 base pairs, skipping
+Sequence: TGCCAAGAAACACAGTGATACTAis smaller than 25 base pairs, skipping
+Sequence: TTGGCATGACATGTTCCTGTTCTTis smaller than 25 base pairs, skipping
+Sequence: GTGCAAGATTTTAATTAATGAGis smaller than 25 base pairs, skipping
+Sequence: TTAGGAGTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTGCCGTCCATGCTAAGCGTGis smaller than 25 base pairs, skipping
+Sequence: CAATCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAACTGTTTGCCGAACTGGTGis smaller than 25 base pairs, skipping
+Sequence: TGCGTTGTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGACCCAGAAATATGCCATGGGis smaller than 25 base pairs, skipping
+Sequence: CATTTTCCCCCCCCCCCCCCCCCCis smaller than 25 base pairs, skipping
+Sequence: CGATGATTATAAAGAGAGAGGCCis smaller than 25 base pairs, skipping
+Sequence: GATGATTGTGGCGATGAAGAAGis smaller than 25 base pairs, skipping
+Sequence: CATGAACCAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGTTGGCGGCTGTGTGGGTTAis smaller than 25 base pairs, skipping
+Sequence: TTGTCTGTCCATACCAACACTAGAis smaller than 25 base pairs, skipping
+Sequence: ACAGCTTAAACGATGTTAAACis smaller than 25 base pairs, skipping
+Sequence: TTATGCTTTGGGCCGTTTACCAAis smaller than 25 base pairs, skipping
+Sequence: TGCCAAGAAACACAGTGATACTAis smaller than 25 base pairs, skipping
+Sequence: TTGGCATGACATGTTCCTGTTCTTis smaller than 25 base pairs, skipping
+Sequence: GTGCAAGATTTTAATTAATGAGis smaller than 25 base pairs, skipping
+Sequence: TTAGGAGTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTGCCGTCCATGCTAAGCGTGis smaller than 25 base pairs, skipping
+Sequence: CAATCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAACTGTTTGCCGAACTGGTGis smaller than 25 base pairs, skipping
+Sequence: TGCGTTGTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGACCCAGAAATATGCCATGGGis smaller than 25 base pairs, skipping
+Sequence: CATTTTCCCCCCCCCCCCCCCCCCis smaller than 25 base pairs, skipping
+Sequence: CGATGATTATAAAGAGAGAGGCCis smaller than 25 base pairs, skipping
+Sequence: GATGATTGTGGCGATGAAGAAGis smaller than 25 base pairs, skipping
+Sequence: CATGAACCAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACCGATGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCATTGGTTCTTGTTTTTGACCis smaller than 25 base pairs, skipping
+Sequence: TTTTTTTTTTTTTTTTTTTTis smaller than 25 base pairs, skipping
+Sequence: GGGTTTGTTTCTGTTTTATTTTTTis smaller than 25 base pairs, skipping
+Sequence: ACCGATCCTTATTAGTTTCCTGis smaller than 25 base pairs, skipping
+Sequence: GGTTTTGTGTACGCAGTGTACis smaller than 25 base pairs, skipping
+Sequence: GCCGTCGGACTTGCTTCTATTGGis smaller than 25 base pairs, skipping
+Sequence: CAACAGACAAACAATAGAGGis smaller than 25 base pairs, skipping
+Sequence: AGGTCCTGCATGGACTACGTis smaller than 25 base pairs, skipping
+Sequence: ACCATGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCATTAGTCCACCCCCTCCCAis smaller than 25 base pairs, skipping
+Sequence: TCGCATTTATAGCTACTGCACTis smaller than 25 base pairs, skipping
+Sequence: ATGACTTATGGCTTGTGTTTCAis smaller than 25 base pairs, skipping
+Sequence: GAATGTCAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: TATGATCATTGGATGGACATAATAis smaller than 25 base pairs, skipping
+Sequence: AAATAAGCAAACTGAATGATis smaller than 25 base pairs, skipping
+Sequence: TGTGAGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTGATGGATACAGTCCTATCTAis smaller than 25 base pairs, skipping
+Sequence: CTCTCTCTGCCTTTTCTGCTis smaller than 25 base pairs, skipping
+Sequence: TATTGGCCGCCAACCTGTAAAATis smaller than 25 base pairs, skipping
+Sequence: ATGAATTGCTGGTGGGCCTCTTGGis smaller than 25 base pairs, skipping
+Sequence: TTTTTTTTTTTTTTTTTTTTTis smaller than 25 base pairs, skipping
+Sequence: TTTCTAGGCATAGAGATTACTis smaller than 25 base pairs, skipping
+Sequence: ACTAGCAGATAGGCCCCGCCCCCCis smaller than 25 base pairs, skipping
+Sequence: TTTCGTGCAATGTATAGATGCTis smaller than 25 base pairs, skipping
+Sequence: TGTGGTAACCAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTGATTTGCTGATGTTAGTACTGTis smaller than 25 base pairs, skipping
+Sequence: CTGGCTGATGAATACGGTATCAAis smaller than 25 base pairs, skipping
+Sequence: GGCTGGTTTGGAGGTGATACTCis smaller than 25 base pairs, skipping
+Sequence: AGCTGTTGTCAATGATGTAAAGGGis smaller than 25 base pairs, skipping
+Sequence: CGATGATGATGATGATGGTGATGAis smaller than 25 base pairs, skipping
+Sequence: TGTTTGCTAGAGTCAGCTTGGAis smaller than 25 base pairs, skipping
+Sequence: CGGGTTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTCATACCCTATATTTTGTCis smaller than 25 base pairs, skipping
+Sequence: GTATTGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCCGGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGTCCCATTTTGTGCCGTTGCTTis smaller than 25 base pairs, skipping
+Sequence: TCACTTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATCGTCAAGGGGTTGGTCCGAATis smaller than 25 base pairs, skipping
+Sequence: AGTTATTTTGTGTAGCTTATis smaller than 25 base pairs, skipping
+Sequence: CGTTCCCAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTCTCTCTCTCTCTCTCTCTCis smaller than 25 base pairs, skipping
+Sequence: CGCTGTGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAAAAGAGGGTGAGCCATTACAAis smaller than 25 base pairs, skipping
+Sequence: ATGACCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATTGGCTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTCTCGGGGGGCTGCTGCAGis smaller than 25 base pairs, skipping
+Sequence: TGCGTTGGGCCGGCGAAGGTCCis smaller than 25 base pairs, skipping
+Sequence: CATCGGCTGCATACTTGTTGCACCis smaller than 25 base pairs, skipping
+Sequence: TAACCTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACAAGACACGGGAACTCGGCTCCCis smaller than 25 base pairs, skipping
+Sequence: CTTATTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTTTGTGTCACCAACCCAACAGCis smaller than 25 base pairs, skipping
+Sequence: GTGTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCTCGTCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAGGAAATTAGTATCAATTGGTGis smaller than 25 base pairs, skipping
+Sequence: ATGGGCTCGAAGACGATCCGis smaller than 25 base pairs, skipping
+Sequence: GGGTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGAACCTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTGGACAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATTAGTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTCGGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGATTTTGAATAATGTTGCTCTAis smaller than 25 base pairs, skipping
+Sequence: CTAATTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTTCCCGTGCTACCTTAGCTTis smaller than 25 base pairs, skipping
+Sequence: CTCTCTCTCTCTCTCTCTCTis smaller than 25 base pairs, skipping
+Sequence: CGTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCTCACCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGAAGATGTAATGGGTATGAGis smaller than 25 base pairs, skipping
+Sequence: TGTAACCGCTTACTGATCATTAGis smaller than 25 base pairs, skipping
+Sequence: GAACGTTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCCCCCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TAGGGTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTGAATTTGGTATAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: ATCTTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCAAGGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CATTCACATTCACGCATCGGAGis smaller than 25 base pairs, skipping
+Sequence: AGCTCCACCCTCTAGTACTACTis smaller than 25 base pairs, skipping
+Sequence: TAGGGCTCGAAGACGAGCAGAis smaller than 25 base pairs, skipping
+Sequence: TTGGTTCGTCTTACTAGAGAAGis smaller than 25 base pairs, skipping
+Sequence: AACTCTGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGTATTTAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAAAAAAAAAAAAAAAGATCGGAAis smaller than 25 base pairs, skipping
+Sequence: CTCTCTCTCTCTCTCTCTCTCis smaller than 25 base pairs, skipping
+Sequence: CTCTCTCTCTCTCTCTCTCTCis smaller than 25 base pairs, skipping
+Sequence: CTTCATGTTGTATGGCTCGTCis smaller than 25 base pairs, skipping
+Sequence: AATTCAGAGGAAGACGAAGAGGACis smaller than 25 base pairs, skipping
+Sequence: ATTAGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCGCCAGTCCTGCTACTACCTCTAis smaller than 25 base pairs, skipping
+Sequence: ACGGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAGACTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTGCTGGGTACAAGGATATTCTTGis smaller than 25 base pairs, skipping
+Sequence: TCGGTCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGCTGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGATTGCTGTTGCATATTCAGCis smaller than 25 base pairs, skipping
+Sequence: GGAGCGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACGTTCAAAAAAAAAAAAAAAAGAis smaller than 25 base pairs, skipping
+Sequence: AAAAAAAAAAAAAAAGATCGGAAis smaller than 25 base pairs, skipping
+Sequence: CGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCACGGAAAAAAAAAAAAGAATCGis smaller than 25 base pairs, skipping
+Sequence: ATCTAAACAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCATCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATTAGCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTCTCTCTCTCTCTCTCTCTCis smaller than 25 base pairs, skipping
+Sequence: GCAGACAACCCGGAGACTGATGAis smaller than 25 base pairs, skipping
+Sequence: GTGCAAGGGATAAGAAGAAAis smaller than 25 base pairs, skipping
+Sequence: TTTTTTTTTTTTTTTTTTGCis smaller than 25 base pairs, skipping
+Sequence: CAAGGGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGGACCGCTTCTATTGGACCTGGis smaller than 25 base pairs, skipping
+Sequence: CAAGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTTTGTATTAATTAAATAAATTis smaller than 25 base pairs, skipping
+Sequence: TAGGTGTTAGGCTGAAAAGTATGis smaller than 25 base pairs, skipping
+Sequence: TTAATTGCCGGGTTAGGTTCTTGCis smaller than 25 base pairs, skipping
+Sequence: TTTGTACGCAGGATGAGGATTTTis smaller than 25 base pairs, skipping
+Sequence: TGCGGGTCTGAGGGATTGATAATAis smaller than 25 base pairs, skipping
+Sequence: GAAGTCCAAAGGGTAGGATAGTGGis smaller than 25 base pairs, skipping
+Sequence: CAGGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCACCCCCCCCCCCTTTTTCTis smaller than 25 base pairs, skipping
+Sequence: CCAGCTAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGGATTCTTTTGGTTTTTTAAAAis smaller than 25 base pairs, skipping
+Sequence: CCAGAACTACGTGAGTTTTGAGis smaller than 25 base pairs, skipping
+Sequence: ACCAGAACTACGTGATTTTTGAGis smaller than 25 base pairs, skipping
+Sequence: TCGCCCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CATCCCAGCTGGTTCATCGAGTGis smaller than 25 base pairs, skipping
+Sequence: ATAGGCTTTTACTTCTATGCATAis smaller than 25 base pairs, skipping
+Sequence: TCTGAGCTGTGAGCACTGATTGCis smaller than 25 base pairs, skipping
+Sequence: GCTGAATTTGGCAGGGAGGACCAis smaller than 25 base pairs, skipping
+Sequence: CGAGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGTCGTTGGACGCTACTTAGATis smaller than 25 base pairs, skipping
+Sequence: CTATTATAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAATTGATGGGTATGAGAGGis smaller than 25 base pairs, skipping
+Sequence: TTGCCCCCCCCCCAAAGTGTTCCis smaller than 25 base pairs, skipping
+Sequence: CCAGACCTACGTGAGTCTTGGGTis smaller than 25 base pairs, skipping
+Sequence: TGCCGCATGTAGTTAAAGACis smaller than 25 base pairs, skipping
+Sequence: TGGTGGGATTCGTATTTAATAis smaller than 25 base pairs, skipping
+Sequence: AAATTGGGTGTTAGATTTTGTATTis smaller than 25 base pairs, skipping
+Sequence: AATTTCGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTTGGGTCTTGGCAATTTTGACTis smaller than 25 base pairs, skipping
+Sequence: TGAGTGTGGGTGCCGACGGTGCGTis smaller than 25 base pairs, skipping
+Sequence: GGGAAGTACGCTACAAAATTis smaller than 25 base pairs, skipping
+Sequence: CTGCTTCCTTCTATAAATTTCTGis smaller than 25 base pairs, skipping
+Sequence: GAAGAATTTGGCTACTCACTis smaller than 25 base pairs, skipping
+Sequence: GTCCTTATTGCAAGAAGTCCGCis smaller than 25 base pairs, skipping
+Sequence: TTATTCCCTGAGGTTCCTATGATTis smaller than 25 base pairs, skipping
+Sequence: CAACAAAATCACTTCTTCCACTCTis smaller than 25 base pairs, skipping
+Sequence: ATACGTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTTTGTTTTTAGTTACTGTGTGis smaller than 25 base pairs, skipping
+Sequence: TGCGCGTACACCGAAAGGGAATCis smaller than 25 base pairs, skipping
+Sequence: ATTGTGGCTGTTGTTTTTATTTTis smaller than 25 base pairs, skipping
+Sequence: AAAGTTCCCCCCCCCCCCCAis smaller than 25 base pairs, skipping
+Sequence: TCCGGCCTGCATAGAGAGAGGGis smaller than 25 base pairs, skipping
+Sequence: TTCAAACCAATGTTGTCTTCCCAAis smaller than 25 base pairs, skipping
+Sequence: CACGTCATTGTCTTGCTTCATTGis smaller than 25 base pairs, skipping
+Sequence: GCGGTCTGACTGTTTTATTGTAGTis smaller than 25 base pairs, skipping
+Sequence: GGCGGTCTTGTGTTTTTTTTTTTTis smaller than 25 base pairs, skipping
+Sequence: CGCTTTTTGGACTTTTCAAACis smaller than 25 base pairs, skipping
+Sequence: TATTTGGGTAAGCAAAGAGGTTis smaller than 25 base pairs, skipping
+Sequence: ATTCGAGCATTTATAGCTACTis smaller than 25 base pairs, skipping
+Sequence: AAACTAGCTTTACAATGCTTGis smaller than 25 base pairs, skipping
+Sequence: NGTGGTGATGAGCTTTTGGGis smaller than 25 base pairs, skipping
+Sequence: GAAATGGAAAAGAGAATGATTAAAis smaller than 25 base pairs, skipping
+Sequence: GGAGGTTGTACTATTCATATTTTCis smaller than 25 base pairs, skipping
+Sequence: TGTCTTGTTTGTTCTCTGAGAACis smaller than 25 base pairs, skipping
+Sequence: TGGTAAAAATGGATGCATCTGGTAis smaller than 25 base pairs, skipping
+Sequence: TAAAGTTCCCCCCCCCCCAAAis smaller than 25 base pairs, skipping
+Sequence: TTGCTTGAACTTTGGCTAATis smaller than 25 base pairs, skipping
+Sequence: GAATTTAGCGGGGATTCAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGACTAATAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTTGGTTGTGCTGTGTATGis smaller than 25 base pairs, skipping
+Sequence: ACAGAACTACGTGAGTTTTGAGTis smaller than 25 base pairs, skipping
+Sequence: GGAATGTGAACTACGAACCTAATTis smaller than 25 base pairs, skipping
+Sequence: GAGGCCCCCCCCCCCCAAATTis smaller than 25 base pairs, skipping
+Sequence: TTGAGGCTAGGTGCCCCCATACTis smaller than 25 base pairs, skipping
+Sequence: GATGTATCGTGTTGTGCCTCTTTCis smaller than 25 base pairs, skipping
+Sequence: CCTTGTGGTGTTGGCATTTTis smaller than 25 base pairs, skipping
+Sequence: AACAACATCAGTTTTGCATGis smaller than 25 base pairs, skipping
+Sequence: AGTAGCGCGCGCGAGTGTATACTGis smaller than 25 base pairs, skipping
+Sequence: TCGCAAGGCTGAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGTTAGAGCTGTTTGTATGGACTis smaller than 25 base pairs, skipping
+Sequence: TGTTTTTGGCTCTACGGCTGTTTTis smaller than 25 base pairs, skipping
+Sequence: AAGGACATACTAGGTATGATCis smaller than 25 base pairs, skipping
+Sequence: GATTTTTCATGAATGGTCTACCAis smaller than 25 base pairs, skipping
+Sequence: CGCCTTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACGACGCCCCGGTAAATGATGGAis smaller than 25 base pairs, skipping
+Sequence: CTGTGCGTGGTTGTTACACACis smaller than 25 base pairs, skipping
+Sequence: AATTCTACTTAATTGTCTTCGTGGis smaller than 25 base pairs, skipping
+Sequence: GTGAGTAGGTAGAATAGATTGATAis smaller than 25 base pairs, skipping
+Sequence: ATTTGTTGGCGATAAACAATACCGis smaller than 25 base pairs, skipping
+Sequence: TTACTGCTTAATGATTCGAAAAACis smaller than 25 base pairs, skipping
+Sequence: GATAATTCCTTTCACTTCTTGTis smaller than 25 base pairs, skipping
+Sequence: TTTGAGGCATTTTAGGAAATTTATis smaller than 25 base pairs, skipping
+Sequence: GTGCGCTCCTGGTCTTAATTGGis smaller than 25 base pairs, skipping
+Sequence: TCAATTCCAATAAACTGTTTTAATis smaller than 25 base pairs, skipping
+Sequence: GGTTTTGTTACATTGTTTAACATTis smaller than 25 base pairs, skipping
+Sequence: AANTAAGTGCATATTTTTGTAGATis smaller than 25 base pairs, skipping
+Sequence: GTACCGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCGTCTGAACAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCGTTATCCCCTTCTCCTCTTGis smaller than 25 base pairs, skipping
+Sequence: CCGCCCCCCCCCCCCCCCCCCis smaller than 25 base pairs, skipping
+Sequence: AGGATGAGAGCCTGAAGATATGTTis smaller than 25 base pairs, skipping
+Sequence: GTTTGTTGTGACACTTTACTATTAis smaller than 25 base pairs, skipping
+Sequence: TCAGAATCTGCTATTTATATGGis smaller than 25 base pairs, skipping
+Sequence: CGGACAGTGAGCGAGCGAGCis smaller than 25 base pairs, skipping
+Sequence: TGACTTGTTGAGTTGTTACAATAis smaller than 25 base pairs, skipping
+Sequence: CATAAGTTCCCCCCCCCCCAis smaller than 25 base pairs, skipping
+Sequence: TCCAAATGAACAAGTAGTGGCis smaller than 25 base pairs, skipping
+Sequence: GGCAACTTTCATAGTAGCATAAis smaller than 25 base pairs, skipping
+Sequence: GTTCCCCCCCCCCCCAACTTTTTCis smaller than 25 base pairs, skipping
+Sequence: GCTCGGTTGATTCGGACTGTGis smaller than 25 base pairs, skipping
+Sequence: CGTCCACATTGCTAATGTTGCTis smaller than 25 base pairs, skipping
+Sequence: GCTGCTGAAACTAGTGCGTGTis smaller than 25 base pairs, skipping
+Sequence: TGAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AATCCACAATTAACAATCTCTATis smaller than 25 base pairs, skipping
+Sequence: TTGCAACTTGATCTTGGTCCGis smaller than 25 base pairs, skipping
+Sequence: ATTCTCATCACTATATGAAGTACTis smaller than 25 base pairs, skipping
+Sequence: GAACCCCCCCCCCCAAATTTTTCis smaller than 25 base pairs, skipping
+Sequence: TTCATGTCAAAGTCCTTCAAAAis smaller than 25 base pairs, skipping
+Sequence: CACCACATTTGATGACTACTGTGTis smaller than 25 base pairs, skipping
+Sequence: TTGGCACCCCCCCCACCCCCGCTCis smaller than 25 base pairs, skipping
+Sequence: CGCTTCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAACACTTGTCCATTCTAATGACTis smaller than 25 base pairs, skipping
+Sequence: TATGTGGACGTTCGGTATTATGGAis smaller than 25 base pairs, skipping
+Sequence: CATGTCCCACAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAGATTCAGGCAACATGAATACAis smaller than 25 base pairs, skipping
+Sequence: GTGCATTATTATTATGATGATGGis smaller than 25 base pairs, skipping
+Sequence: ATGCGTTCAAATGGTTGTTTCAAis smaller than 25 base pairs, skipping
+Sequence: TACTTGTTGCTTTAATAGAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TACGTTGATATGGTTCCACCGAis smaller than 25 base pairs, skipping
+Sequence: CCACCCCCTCCCAAAATTTCATis smaller than 25 base pairs, skipping
+Sequence: TTCCCGACAAATCCAAGTGGTTTTis smaller than 25 base pairs, skipping
+Sequence: CGACCGGGGGCATTCGTATTTCATis smaller than 25 base pairs, skipping
+Sequence: TAGAGTAGTGGGGCCCCCTCTis smaller than 25 base pairs, skipping
+Sequence: CTCTCGCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACCATGCGTCGTGAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGCCTGCCACACAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTTGCGAAAGGGGTAGTGACATTGis smaller than 25 base pairs, skipping
+Sequence: TGTATGTGAGTGGAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGATCCTGCTGGAAGATTATTATis smaller than 25 base pairs, skipping
+Sequence: CTGCTCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCGGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTGGGGCTTTGATCCTCAATCis smaller than 25 base pairs, skipping
+Sequence: GATTCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CACGTCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TAATCGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCCCCCCCCCCCCCCCCCCCCis smaller than 25 base pairs, skipping
+Sequence: GCGGGCGATGATTACAATTAGis smaller than 25 base pairs, skipping
+Sequence: AATCCTAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGGGCAAAAAAAAAAAAAAAAGATis smaller than 25 base pairs, skipping
+Sequence: TTCGTTTTCGTTCCTTGTCTTTis smaller than 25 base pairs, skipping
+Sequence: TTTTTGCCCTAGAATTTATTGAGis smaller than 25 base pairs, skipping
+Sequence: GGACGCGGGGGCATTCGTATTTCAis smaller than 25 base pairs, skipping
+Sequence: GTTTTTGCCCTAGAATTTATTGAGis smaller than 25 base pairs, skipping
+Sequence: AATGGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTACCGAAAAAAAAAAAAAAAAGAis smaller than 25 base pairs, skipping
+Sequence: CTCCCTAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGTTGGACATGGGGGTTATGTTCis smaller than 25 base pairs, skipping
+Sequence: CAAAATTTATACATCTTACAATGGis smaller than 25 base pairs, skipping
+Sequence: GAACAAGAACGAAAGTTGGGGGCis smaller than 25 base pairs, skipping
+Sequence: CAAAAAAAAAAAAAAGATCGGAGGis smaller than 25 base pairs, skipping
+Sequence: ACCATAACTACGTGAGCTTTGis smaller than 25 base pairs, skipping
+Sequence: CTACATCAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACTGGGAATTTTGACTGTCTTis smaller than 25 base pairs, skipping
+Sequence: GACAGTCGCGGGCATTCGTATGTCis smaller than 25 base pairs, skipping
+Sequence: TTTTGCTGTTAGTACTCCACTGGCis smaller than 25 base pairs, skipping
+Sequence: TCTTGGGCTTAGTAGTGATCTTTTis smaller than 25 base pairs, skipping
+Sequence: TCGCAAGGCTGAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGTGCCAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTTTGGGGCTCGGAGACGATCAAis smaller than 25 base pairs, skipping
+Sequence: AGACATAACTACGTTACTTTTTAis smaller than 25 base pairs, skipping
+Sequence: TGGTATCTCGACACTGAGTGCAAAis smaller than 25 base pairs, skipping
+Sequence: GACGGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGACTCCGCTGGCACCTTATGis smaller than 25 base pairs, skipping
+Sequence: GCTGGGGCTGCTGTAGAGGAAGAGis smaller than 25 base pairs, skipping
+Sequence: CCAGGGCTGTCGTATTCCTTGTTAis smaller than 25 base pairs, skipping
+Sequence: CGAGGATGTTTTCATTAATCAis smaller than 25 base pairs, skipping
+Sequence: GGCCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAATAGGTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AATGCCCACCGCACGGACCGCAAis smaller than 25 base pairs, skipping
+Sequence: ATGTTGGCCTTTGTCCCGAGis smaller than 25 base pairs, skipping
+Sequence: TCCGCCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAAAAAAAAAAAAAAAGATCGGis smaller than 25 base pairs, skipping
+Sequence: ACACGGTGAAGTGTTCGGATTGCis smaller than 25 base pairs, skipping
+Sequence: AGGGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCATTCTCAACAAGTATGCGTTCAis smaller than 25 base pairs, skipping
+Sequence: TTTTTGCCCTAGAATTTATTGAGTis smaller than 25 base pairs, skipping
+Sequence: TTTCGGTTGTATTTTCCATAGGATis smaller than 25 base pairs, skipping
+Sequence: GGGGATTTAGCGAATCAATAis smaller than 25 base pairs, skipping
+Sequence: CAATTGGGCTGGGCTTTTTCACis smaller than 25 base pairs, skipping
+Sequence: AGTATGCCGTCTTCTGCTTGAAAis smaller than 25 base pairs, skipping
+Sequence: CGACCAGGGATCAGCGGATGTis smaller than 25 base pairs, skipping
+Sequence: CATCCCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTGGGATAATCTATTGGTAGATis smaller than 25 base pairs, skipping
+Sequence: GAGTTCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTGGATCTCTGAATCTGGTTGTTis smaller than 25 base pairs, skipping
+Sequence: TACTCGGTTCATATTTTATCGTAis smaller than 25 base pairs, skipping
+Sequence: CTACGACCGTCAAACTCACAAis smaller than 25 base pairs, skipping
+Sequence: CGAGTGTTTTGGTGTATGAAACTGis smaller than 25 base pairs, skipping
+Sequence: GTCGCGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGGACCATCACGGCTCCTCTCCis smaller than 25 base pairs, skipping
+Sequence: AGGATTATGCAGCAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGATGCTAAGGTGGATGGATACis smaller than 25 base pairs, skipping
+Sequence: GAGTTCGGCAACATCATTATATGis smaller than 25 base pairs, skipping
+Sequence: TCGCGATTGTAAGTGTATGATACis smaller than 25 base pairs, skipping
+Sequence: CAAGGCCGAGCAATGGAACGTCGis smaller than 25 base pairs, skipping
+Sequence: GCCTGTCTCCCGAGAGGTCACTTis smaller than 25 base pairs, skipping
+Sequence: ATTGCACCGGCGACTACGTAGGGis smaller than 25 base pairs, skipping
+Sequence: TTTCTGAATGGCCTATTGTATAGCis smaller than 25 base pairs, skipping
+Sequence: GGTGTTTTCTATTCTCTGTTGTTTis smaller than 25 base pairs, skipping
+Sequence: TGATGGGGGGGGGGGGGGGGGGGGis smaller than 25 base pairs, skipping
+Sequence: ATGGGATTGATTTTAGACTGGTis smaller than 25 base pairs, skipping
+Sequence: TGCGGAGTTCTGTTGAATGAATis smaller than 25 base pairs, skipping
+Sequence: CGGTCAAACATGGATGGAAGis smaller than 25 base pairs, skipping
+Sequence: CAGGTCCTTTTGACTTGTGGGAis smaller than 25 base pairs, skipping
+Sequence: TTCTGGATCTGTATTTTGGGCis smaller than 25 base pairs, skipping
+Sequence: GGTCCTAATATGAACATCTTCGis smaller than 25 base pairs, skipping
+Sequence: CTGTACTCCGTTGTGTGTTGTAAis smaller than 25 base pairs, skipping
+Sequence: TCTGGGCCGACTCATCCGATTTTis smaller than 25 base pairs, skipping
+Sequence: ACGATGCGCGATGATAAGAAACGis smaller than 25 base pairs, skipping
+Sequence: CCTCCCGTGCCCCTTATCCTTis smaller than 25 base pairs, skipping
+Sequence: TTGAATTGCAGAGAGAGAGAGAGAis smaller than 25 base pairs, skipping
+Sequence: TTAAAATCATTACTAGCAGATAGGis smaller than 25 base pairs, skipping
+Sequence: GGCCTGTACGTCAACATCGCGTGis smaller than 25 base pairs, skipping
+Sequence: AAGGGTGAGAAAAAGAATAAGAAis smaller than 25 base pairs, skipping
+Sequence: TAATTCATTTGTGTAGATATTis smaller than 25 base pairs, skipping
+Sequence: GGGGGGGAAGGTGTTGTAGTTGATis smaller than 25 base pairs, skipping
+Sequence: TGATTCCGGGTCGTTGATGAis smaller than 25 base pairs, skipping
+Sequence: TGTGGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTTTTTTGTTCCCCCCCCCCCAis smaller than 25 base pairs, skipping
+Sequence: GTGCCAGTTGCTGTGGGAAATGCCis smaller than 25 base pairs, skipping
+Sequence: GCCAACTGGAGTTCTGGATCTis smaller than 25 base pairs, skipping
+Sequence: GCCGCGGACTCCTTAAAACACTTCis smaller than 25 base pairs, skipping
+Sequence: GTTAGCTATGAGAACGTTTTATGis smaller than 25 base pairs, skipping
+Sequence: CCTACCCCTGCCGACAAAACAAis smaller than 25 base pairs, skipping
+Sequence: TGTGCCAGGTGATTAACAAAACGGis smaller than 25 base pairs, skipping
+Sequence: TTTGTTCCCCCCCCCCCCACTis smaller than 25 base pairs, skipping
+Sequence: TTACCAGAACTACGTTAGTTTTGAis smaller than 25 base pairs, skipping
+Sequence: CAAACCAACCACCTGCAACTTis smaller than 25 base pairs, skipping
+Sequence: TAAGGCTTGCATTTTTTTTTTis smaller than 25 base pairs, skipping
+Sequence: CTTCAGTCAAACTCATTTCAAGTTis smaller than 25 base pairs, skipping
+Sequence: TCTTGCTCCTTACAATACTAGis smaller than 25 base pairs, skipping
+Sequence: TCAGACACGGCCAATTTCAAGAis smaller than 25 base pairs, skipping
+Sequence: TTACGCTTTTTCTGTTTTGCTCTCis smaller than 25 base pairs, skipping
+Sequence: TAATTCTGAGTCTTGAGCAAAGis smaller than 25 base pairs, skipping
+Sequence: GGATATGCAGCAAAAAAAAGAAis smaller than 25 base pairs, skipping
+Sequence: TCCGGGCTATTTTGACCGGAAAis smaller than 25 base pairs, skipping
+Sequence: TTATGACGGGTGATTACTCAATACis smaller than 25 base pairs, skipping
+Sequence: ACGCTCATCTTAATAAATGAAATAis smaller than 25 base pairs, skipping
+Sequence: TCATGGTAAAAAATGATGCATCis smaller than 25 base pairs, skipping
+Sequence: TTGAAAGCGGCCGTTCCATTCACCis smaller than 25 base pairs, skipping
+Sequence: AGGCGTTTAGAGGTACTGGATTTTis smaller than 25 base pairs, skipping
+Sequence: TGGCCTACCACAGGACGTGTTGis smaller than 25 base pairs, skipping
+Sequence: GTTATAGCTGTTGTTCTGATis smaller than 25 base pairs, skipping
+Sequence: CTGGGCTGTAACTCTAGCTGGTCTis smaller than 25 base pairs, skipping
+Sequence: TGAGGTTGGACTTGACTAGTTATTis smaller than 25 base pairs, skipping
+Sequence: CAAGTCTAGCATATAGAAATGAAis smaller than 25 base pairs, skipping
+Sequence: TGGTACTTTGTTTAATTGTATTGAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGCAACTCTCGCAGCTGCCGGCCis smaller than 25 base pairs, skipping
+Sequence: TCTAAGAAGCCGAGATTGCAis smaller than 25 base pairs, skipping
+Sequence: GCCGCCGCCGGCCAGCAGCCGCCis smaller than 25 base pairs, skipping
+Sequence: TGTTGCAGTCCAGATTCAGAAACCis smaller than 25 base pairs, skipping
+Sequence: ATGGTTGCTGTGTCAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGTTGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTAGAAGGACGTGCGATTTGTTTis smaller than 25 base pairs, skipping
+Sequence: ACAGTTGTCTGTAAAGTGTTCis smaller than 25 base pairs, skipping
+Sequence: ACTTTGAAGCTGGACAAGGGAAis smaller than 25 base pairs, skipping
+Sequence: GGGTGTGTGCTTGCAGTGTAis smaller than 25 base pairs, skipping
+Sequence: CCCCACCCCCCCCCCCCCCCCCis smaller than 25 base pairs, skipping
+Sequence: CAATGTCTGGGGAAATAACGCCAGis smaller than 25 base pairs, skipping
+Sequence: GTGGTTCAATATCTGCATCCTAis smaller than 25 base pairs, skipping
+Sequence: GCTAAAAAAAAAAAAAAAAGATCGis smaller than 25 base pairs, skipping
+Sequence: TGACGGTATCCGGGGAATACGCATis smaller than 25 base pairs, skipping
+Sequence: CGACCAAAGCCAAGGCTGTGACTGis smaller than 25 base pairs, skipping
+Sequence: AGTTTGTTTGGTTTTTCTCTTTTis smaller than 25 base pairs, skipping
+Sequence: TCAACTCCTAGCACCTCTTCATis smaller than 25 base pairs, skipping
+Sequence: TCGATTCTTGGTTTTTATGTATTis smaller than 25 base pairs, skipping
+Sequence: TTCTTGTGCTGGTAAAGTAAAAGis smaller than 25 base pairs, skipping
+Sequence: TGACGTCGGCCTTGCTTCTATis smaller than 25 base pairs, skipping
+Sequence: NTATCCCTGCTGTAATTAACTACis smaller than 25 base pairs, skipping
+Sequence: TGTCGCCGTTGTTCATGCCTTGGis smaller than 25 base pairs, skipping
+Sequence: TGGATTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GACTTAGAACCAAAGCTTGTGTACis smaller than 25 base pairs, skipping
+Sequence: CGCCTGGTTTGATGTCAATTGGTis smaller than 25 base pairs, skipping
+Sequence: GGATCTACTGGGCCGGCCCACTTAis smaller than 25 base pairs, skipping
+Sequence: TCTAGTTTCATTCATTCTTGACATis smaller than 25 base pairs, skipping
+Sequence: AAATCATTACTAGCAGATAGGCCis smaller than 25 base pairs, skipping
+Sequence: CCAGGCACCCAGAGACGAAGis smaller than 25 base pairs, skipping
+Sequence: GCAGCGAGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTTTTCGCTGCTTAATCGATTATGis smaller than 25 base pairs, skipping
+Sequence: AAGTCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTGTGTGTGTGAGAGAGAGATAGis smaller than 25 base pairs, skipping
+Sequence: TGATTGGAGTTCCTTTTTAGTCCAis smaller than 25 base pairs, skipping
+Sequence: GAATTATGAGGAAATGATTTCTGGis smaller than 25 base pairs, skipping
+Sequence: GCAGGTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGAGGTAAAAAAAAAAAAAACAAis smaller than 25 base pairs, skipping
+Sequence: TTCAGGCCCAATTTTCTTTATTis smaller than 25 base pairs, skipping
+Sequence: GCGGTTAACGCATCTAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGCGATGGCCGACTAATAGCACTis smaller than 25 base pairs, skipping
+Sequence: ATGGAGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCAAGGCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCCCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAAGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGTCGACAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGGTCGCAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: TGGAGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TAGTCGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAGGCGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGGGCATGAACTGCTTTTCCCGGis smaller than 25 base pairs, skipping
+Sequence: CGTCCTCAAATCCCAGGGCCCis smaller than 25 base pairs, skipping
+Sequence: GTCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGCGTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGCTGAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: AAATGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CACGGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGAGCGATAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTAAGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCTGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGGCACAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGTGGGTAAAAGGGACCCCis smaller than 25 base pairs, skipping
+Sequence: CGCCTTAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: GAGCGTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCCAAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCGTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCTGTGTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGAGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAAGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCAAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTCTGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGAGCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGTCGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAAGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTCGCACGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCGAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: CGCAAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCGAGGGGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCCGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGTGTAGGGGTGTCTTTTCTGTTis smaller than 25 base pairs, skipping
+Sequence: TAATCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTAGTATGGATGAGCTCAGCAis smaller than 25 base pairs, skipping
+Sequence: CGTATGCCGTCTTCTGCTTGis smaller than 25 base pairs, skipping
+Sequence: GCGGCTGAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: GGAGCTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGTTGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTGTCCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGTCGTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCATGGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGCTGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTGGGGCGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGAGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACCCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAAGAAAAAAAAAAAAAGATCGGis smaller than 25 base pairs, skipping
+Sequence: GGCAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAGTCACAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCCTCCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCTGGGCAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGAGCACATGGTCGAGATTACis smaller than 25 base pairs, skipping
+Sequence: TTAGTCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTATGGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGACCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCGCGATAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCGAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTAAAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGACGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGAGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CACCGGCGGGGGGAGGATGGGCis smaller than 25 base pairs, skipping
+Sequence: AGGCTGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGAGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAAAGTTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCTGGAACAAGTGAGGGTAGis smaller than 25 base pairs, skipping
+Sequence: AAAGCACCCCCAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAAGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGGTCGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AACGGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGCTGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTCCCCGTCGTGCCGCCGGCGis smaller than 25 base pairs, skipping
+Sequence: TCGCGAGGCTAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GACAGTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGAAGCCTACGGTTCACTAAGTTCis smaller than 25 base pairs, skipping
+Sequence: CAATGTGTGCACTCGCGTGTGAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGTGGGCGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATAATTGGTATGTCATGTAAGGGTis smaller than 25 base pairs, skipping
+Sequence: TGCGCGTACACCGAAAGGGCAis smaller than 25 base pairs, skipping
+Sequence: CCCGCGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CATGCACATTCGGAGGGATAATis smaller than 25 base pairs, skipping
+Sequence: TTGTAGCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGGGTCATGAACTTCTTTTis smaller than 25 base pairs, skipping
+Sequence: CTACTCAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: AGCGTGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGGCCCAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: CTGAGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTTATTGCCGTGATCGGTCATTACis smaller than 25 base pairs, skipping
+Sequence: GGAGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCCGTTTCAGGAACTTCTTTTCCCis smaller than 25 base pairs, skipping
+Sequence: GGGAGCGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAGCCCGTCTGATAGCGCTCGGTis smaller than 25 base pairs, skipping
+Sequence: GCAGGCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCGTAGCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTTCGTCGTCAAATCCCAGGGis smaller than 25 base pairs, skipping
+Sequence: ACGGGTCATTAACTTCTTTTCCis smaller than 25 base pairs, skipping
+Sequence: CCACTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TAGAGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTGATACTGGGAGGGGAATACis smaller than 25 base pairs, skipping
+Sequence: ATGTTGCTTTACTTAGTTACis smaller than 25 base pairs, skipping
+Sequence: CGGGCTAGAGTACGGTAGGGGis smaller than 25 base pairs, skipping
+Sequence: CCACGATGCCGACCAGGGATCAis smaller than 25 base pairs, skipping
+Sequence: GAGCAAGGCTGAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACGGAGGAGCAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGCGCACACCGAAAGGGAATis smaller than 25 base pairs, skipping
+Sequence: TACTGTTTTGTTAGTTCCTATTis smaller than 25 base pairs, skipping
+Sequence: CGCGAATAAAAAACAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAGGCAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: CAAGGGTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GACTCTAGGACTCCGCTGGCACCTis smaller than 25 base pairs, skipping
+Sequence: AGGCTGAGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAGCCAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: GGAATAATGATGAATGTGTACTis smaller than 25 base pairs, skipping
+Sequence: AAGGTCGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCGCAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGTGGCCTACGGGTCATGAACTTCis smaller than 25 base pairs, skipping
+Sequence: GCCCCCCCCCCCCCAAACTTTTCCis smaller than 25 base pairs, skipping
+Sequence: GGCTGGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTCGTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TAGTGGAAGGGGATTCTCCAAis smaller than 25 base pairs, skipping
+Sequence: CCCTCTGCACTCTTTTTTCCTTAis smaller than 25 base pairs, skipping
+Sequence: CGATGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCAGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGCTGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTCAGCCGACCAGGGATCAGCGGis smaller than 25 base pairs, skipping
+Sequence: GGAAGAGGGGGTCAAAGTTTCGTTis smaller than 25 base pairs, skipping
+Sequence: CTGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGCACCCATGGCCTACCCACAGGGis smaller than 25 base pairs, skipping
+Sequence: CCACCGCCCCCCCCCCCCCCis smaller than 25 base pairs, skipping
+Sequence: GGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATCGATGCCGACCTGGGATCAGCis smaller than 25 base pairs, skipping
+Sequence: CACAACCGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGCAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTGCGAAAAAAAAAAAAAAAAGATis smaller than 25 base pairs, skipping
+Sequence: GTAAGCCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGCCGGGTCGTGCCGCCGGCis smaller than 25 base pairs, skipping
+Sequence: GGTGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCTTGCCGACCAGGGATCCGCGis smaller than 25 base pairs, skipping
+Sequence: AGGCCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGCGTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGTAGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTCACCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGCGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGTGCGCCGGGTCGTGCCTCis smaller than 25 base pairs, skipping
+Sequence: GAGCAAAACCAAACAGCAGGCAATis smaller than 25 base pairs, skipping
+Sequence: TCTACCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACGAGATTTGCCAGCGTGCGis smaller than 25 base pairs, skipping
+Sequence: GAGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCGCATACACCGAAAGGGAACCGGis smaller than 25 base pairs, skipping
+Sequence: TAGTAGCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGACTGTATGCATACATACGTAAis smaller than 25 base pairs, skipping
+Sequence: ACGTCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAGAGACGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCCGGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCCGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTAGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCAAGATTCTACAAATAATAAGis smaller than 25 base pairs, skipping
+Sequence: TATCCCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CACACGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAAGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGGTCGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGTCGCATAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCGACCTGGGAACAGCGGATis smaller than 25 base pairs, skipping
+Sequence: CACGTGGCCTGAACTGCGTTTCCCis smaller than 25 base pairs, skipping
+Sequence: CCGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCGGAGTACGCGAACTAACATAis smaller than 25 base pairs, skipping
+Sequence: ACCAACCTCTGTCACCGTATGAGis smaller than 25 base pairs, skipping
+Sequence: TGGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAGGTAGAAGGTTTGGATTGTGAGis smaller than 25 base pairs, skipping
+Sequence: CTCGCGAAACCGACACAGGTAGGis smaller than 25 base pairs, skipping
+Sequence: CGGGTTCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAGCAAGGCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGTGCTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AACTTGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AATTTCTGCTTGAATTATCTATTis smaller than 25 base pairs, skipping
+Sequence: GCAAGGCAGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGGGCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAATTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGTGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGTGGCTTTTTTAGTTCGCCGTCTis smaller than 25 base pairs, skipping
+Sequence: GCGAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTAGGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGCGTCTAACCGGAATGATTGis smaller than 25 base pairs, skipping
+Sequence: CGCAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTAGGTGGAGCGAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAATTGTGACCATTATAACATis smaller than 25 base pairs, skipping
+Sequence: GCGATGACAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGTCGCAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: TGGTCGCTTAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGCTGTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATGGCCGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCCGGTCGTACCTCCGGCGis smaller than 25 base pairs, skipping
+Sequence: GGCTGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CATCATCTAAAAAATTTGTATATis smaller than 25 base pairs, skipping
+Sequence: GTAAGTCGCAAGGCTGAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGCTGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TACACCTGCGCGTACACCGAAis smaller than 25 base pairs, skipping
+Sequence: TTGCTGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACACCCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAATTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TATCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGCGCTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCTCGTCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATTACTGCACCGGGACGTGGTGGCis smaller than 25 base pairs, skipping
+Sequence: TTGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCAAACGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGCCGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TACAGACCAGGGATCAGCGGAis smaller than 25 base pairs, skipping
+Sequence: TACCGTCAAGCTATTTAAAAGis smaller than 25 base pairs, skipping
+Sequence: GACCTGATCCTATTGTGTTGGCCTis smaller than 25 base pairs, skipping
+Sequence: GGAAGTATTCTTTCTTTAGGAis smaller than 25 base pairs, skipping
+Sequence: TGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCGTCAAATCCCAGGGCTCAAis smaller than 25 base pairs, skipping
+Sequence: CAAGCAAACGACAAAAGTTAATAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCTCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATGGCCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGTGTGGTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACTCGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGCGAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: NGAGGCAGGCCGGGTCGTGCCTCis smaller than 25 base pairs, skipping
+Sequence: TATTTTGAAACACGATTTTGCTGCis smaller than 25 base pairs, skipping
+Sequence: TGTAGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCATCCCAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: TCAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGCGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGCGCAACGAGGCCCCCGCAGGACis smaller than 25 base pairs, skipping
+Sequence: AAGCAGGCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTCAGGCCAGGGTTCCGCGGCTGTis smaller than 25 base pairs, skipping
+Sequence: GGCGAGCGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAAGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCGGTGGAGCGAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTTGCGGTTTATTTTTAAGCAAis smaller than 25 base pairs, skipping
+Sequence: GGGTCGTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGGGCGTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCCAGGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGAGCGGGTCGTGCCGCCGGis smaller than 25 base pairs, skipping
+Sequence: ATCCCCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTGGTCAGGCGGGGCTACCCGCis smaller than 25 base pairs, skipping
+Sequence: GCGGGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTCGCATAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGTTGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGACGAGGCCGACCAGGGATCAGCis smaller than 25 base pairs, skipping
+Sequence: TGGCTGGAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: ACAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GACAGTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACAAAAGCCGCGGTAAGACAGAGGis smaller than 25 base pairs, skipping
+Sequence: CGCAAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTTGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGTGATGAGCTTTTAAGAAAGTGis smaller than 25 base pairs, skipping
+Sequence: CTCTGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGTATCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCCCCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTTGCGCGTACACCGAAATGCAATis smaller than 25 base pairs, skipping
+Sequence: GGCAAACCTACCAAAAAATACGAGis smaller than 25 base pairs, skipping
+Sequence: TACGTGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGCTGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACCCCCCCCCCCCCCCCCCCGAis smaller than 25 base pairs, skipping
+Sequence: TGTAGCCAAAAAAAAAAAAAAGAAis smaller than 25 base pairs, skipping
+Sequence: CGCTTCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGTCTGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AACATGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGAGCGTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AATCTCCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGTGAAAGCGATGAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGCCGCCAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: CCTGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCTTATTGTATCATTTTGATis smaller than 25 base pairs, skipping
+Sequence: GTCTTTTCCCGGAGAAGAAACAAis smaller than 25 base pairs, skipping
+Sequence: CCCAGCCCGTCTGATAGCGCTCTGis smaller than 25 base pairs, skipping
+Sequence: CACAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CATTGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCAGCGCGTACACCGAAAGGGis smaller than 25 base pairs, skipping
+Sequence: TGTATTCATTCTACTTGCTAGCACis smaller than 25 base pairs, skipping
+Sequence: CACCGGGGAATACGTAGGAGCis smaller than 25 base pairs, skipping
+Sequence: GCAGGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGACTCAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: TAGGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATTGGAGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATGCAGGCCGGGTCGTGCCTCCGGis smaller than 25 base pairs, skipping
+Sequence: GCCAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCGATTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAAAAACCAACTCTCTCACAGCACis smaller than 25 base pairs, skipping
+Sequence: GGTGCTGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCACAGACTTTATTGGTGACACis smaller than 25 base pairs, skipping
+Sequence: CAAGGCCAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TATGGCCCGGGTCGTGCCGCCGGCis smaller than 25 base pairs, skipping
+Sequence: GCAGGCCTACGGGTGATGAACGTCis smaller than 25 base pairs, skipping
+Sequence: AAAGGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTAGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAACGCACTGCTCAATTCTTCTis smaller than 25 base pairs, skipping
+Sequence: GTAGGCCGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TACTACCTCTAAATTTAGGCGGGGis smaller than 25 base pairs, skipping
+Sequence: TGTTTGGGTTGAGTCCCTGTTTis smaller than 25 base pairs, skipping
+Sequence: TTTGAACCATAATGGTCATCTTTTis smaller than 25 base pairs, skipping
+Sequence: GCAAGGTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAAGGATAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGTCCCATTGCACCGGGGAAGis smaller than 25 base pairs, skipping
+Sequence: AGGCTCAGCTTATTGTTTTTTis smaller than 25 base pairs, skipping
+Sequence: AACTGCCGACCAGGGATCAGis smaller than 25 base pairs, skipping
+Sequence: GGGGACCGCTCGAAGACGCTCAGis smaller than 25 base pairs, skipping
+Sequence: CGTATGGCGTCTTCTGCTTGAAAAis smaller than 25 base pairs, skipping
+Sequence: CCGGTGGAGCGAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTTCTTGGCTGTTGTTGTTGTTis smaller than 25 base pairs, skipping
+Sequence: TATATTTAAAATTCTGAATTGAACis smaller than 25 base pairs, skipping
+Sequence: CAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GATAGGGGTTCGGTATATCGTTGis smaller than 25 base pairs, skipping
+Sequence: GTGGTTGTTACCCACTTTAGTGTTis smaller than 25 base pairs, skipping
+Sequence: CGTATGCCGTCTTCTGCTTGAis smaller than 25 base pairs, skipping
+Sequence: TCGTAGGTTCTGTTTCGTGAGAis smaller than 25 base pairs, skipping
+Sequence: GTGAAGGCAAAGAAGTGTTTGis smaller than 25 base pairs, skipping
+Sequence: GGGGAGTTGTCATCAGGCTGGTis smaller than 25 base pairs, skipping
+Sequence: TTTGTTTGGTTTGTACTTGTGATis smaller than 25 base pairs, skipping
+Sequence: CCGACCCCATCGTCGCCACCCCGis smaller than 25 base pairs, skipping
+Sequence: TCTGCGCTGCCGGGTTGGCCGTCGis smaller than 25 base pairs, skipping
+Sequence: CTTGTACCCTGTCGCACCACGAis smaller than 25 base pairs, skipping
+Sequence: AACTTGTTTTTTTTTTTTTTTTTTis smaller than 25 base pairs, skipping
+Sequence: AGTATGCCGTCTTCTGCTTGAis smaller than 25 base pairs, skipping
+Sequence: ATTCATGTGGGGTAACTCAACAis smaller than 25 base pairs, skipping
+Sequence: AGTATGCCGTCTTCTGCCTGAAAis smaller than 25 base pairs, skipping
+Sequence: GCTTTTAGTAATTGGGATGTGTGis smaller than 25 base pairs, skipping
+Sequence: AGTATGCCGTCTTCTGCTTGis smaller than 25 base pairs, skipping
+Sequence: TCATGTTGGCCGTCGGACTTGCTTis smaller than 25 base pairs, skipping
+Sequence: CGTATGCCGTCTTCTGCTTGAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCCGAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGATTTCGAGGGGTTGCGAGGis smaller than 25 base pairs, skipping
+Sequence: TTGGGGAAAAGCTTCAATGTis smaller than 25 base pairs, skipping
+Sequence: TGGGCAAATGAAGTTTTTTCis smaller than 25 base pairs, skipping
+Sequence: AGTATGCCGTCTTATGCTTGAAAAis smaller than 25 base pairs, skipping
+Sequence: TGATTGTTAATGTGGTTATCAis smaller than 25 base pairs, skipping
+Sequence: TCGCGAGGCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACATTTCCCAACTTTTGTTTis smaller than 25 base pairs, skipping
+Sequence: CGCGCGAGAGTGTGAGATGTGis smaller than 25 base pairs, skipping
+Sequence: TGTTATGGGTCTGTATCCCTGis smaller than 25 base pairs, skipping
+Sequence: CCACCCGCGCCGCCACGTCACACTis smaller than 25 base pairs, skipping
+Sequence: GTGGCGGAGGTGAAGTTGCCAAGis smaller than 25 base pairs, skipping
+Sequence: TACCAATTTTAGGTAACCACTTTAis smaller than 25 base pairs, skipping
+Sequence: ATGCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTTTGTGTGTGCAGCCATATis smaller than 25 base pairs, skipping
+Sequence: CAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTTGCTTCTATTGGACCTGGAGAis smaller than 25 base pairs, skipping
+Sequence: TTTGTTGCATGCGATAAAATAis smaller than 25 base pairs, skipping
+Sequence: AGTATGCCGTCTTCTGCTTGAAis smaller than 25 base pairs, skipping
+Sequence: CGAGAACTACGTGAGTTTTGAGis smaller than 25 base pairs, skipping
+Sequence: CCGATGAATGCACATTGTATATCAis smaller than 25 base pairs, skipping
+Sequence: CCACTAAAAACAACAAAAATCTis smaller than 25 base pairs, skipping
+Sequence: TCTCCATTTGTTACAGCGTGis smaller than 25 base pairs, skipping
+Sequence: TTTTTTTTTTTTTTTTTTAATGAAis smaller than 25 base pairs, skipping
+Sequence: GCGGGTGGTGGTTGTATGTATGis smaller than 25 base pairs, skipping
+Sequence: ATGACTCGTGTGCATAGAAAATGAis smaller than 25 base pairs, skipping
+Sequence: GTGTCTGTGTAGACGTACCAAis smaller than 25 base pairs, skipping
+Sequence: CTTGTTGGATGGTACCTTTGCTGis smaller than 25 base pairs, skipping
+Sequence: ATAGCTCCTGGGACGGCCGTCGGAis smaller than 25 base pairs, skipping
+Sequence: TACTTGGTGTCTGTCATTATATGis smaller than 25 base pairs, skipping
+Sequence: AGTATGCCGTCTTCTGCTGGAAAAis smaller than 25 base pairs, skipping
+Sequence: TTCTAGTCCATAACTCTTGTAis smaller than 25 base pairs, skipping
+Sequence: GGTTGAGATATTGTGGGGGTTGACis smaller than 25 base pairs, skipping
+Sequence: CGTATGCCGTCTTCTGCTTGAis smaller than 25 base pairs, skipping
+Sequence: CCCCCCCCCCCCCCCCCCCCCis smaller than 25 base pairs, skipping
+Sequence: GTGGTAGCGATGAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATCGTTGAGATTTATGCCACAAGis smaller than 25 base pairs, skipping
+Sequence: AACTTTAGTCCGATGTTTCTAis smaller than 25 base pairs, skipping
+Sequence: CTGTTTTGGCTATTTTGACATCCCis smaller than 25 base pairs, skipping
+Sequence: TTGCCCCGCCACAAGAAATTTCCCis smaller than 25 base pairs, skipping
+Sequence: TAACTCTAGCTGGTCTTCTAGCTGis smaller than 25 base pairs, skipping
+Sequence: CGTATGCCGTCTTCTGCTTGis smaller than 25 base pairs, skipping
+Sequence: CACCACAAATCCAGCTTTCTis smaller than 25 base pairs, skipping
+Sequence: CAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATTGTTTGGTGGTATTTTTTTTis smaller than 25 base pairs, skipping
+Sequence: ATTTTTGGTTAATATGTATTCGGis smaller than 25 base pairs, skipping
+Sequence: AACGGTTGGGGGCTCGAAGACGATis smaller than 25 base pairs, skipping
+Sequence: TTGGGAATGTGAATTAATATCACis smaller than 25 base pairs, skipping
+Sequence: ATTTTGTGGGCTATTACTTTTis smaller than 25 base pairs, skipping
+Sequence: TCACATAGAGTTTGTATTTTCis smaller than 25 base pairs, skipping
+Sequence: GTTCGGATCTGAGATGTTGACis smaller than 25 base pairs, skipping
+Sequence: TGTGACATGGGAATGGTTTGCATTis smaller than 25 base pairs, skipping
+Sequence: GGCTGCTTAGGGTTTTACTCCis smaller than 25 base pairs, skipping
+Sequence: TCGCTGTCGGTATTTTGTCTGTis smaller than 25 base pairs, skipping
+Sequence: TTCATGTGTGGTTTGATGTTGTTis smaller than 25 base pairs, skipping
+Sequence: AGGTGCCTAGTAATAAAGAGTGis smaller than 25 base pairs, skipping
+Sequence: TTTCTTGTTGGTTTGTGCTTTTAis smaller than 25 base pairs, skipping
+Sequence: AATCGGAGGTGGTCAGTGGGGis smaller than 25 base pairs, skipping
+Sequence: CAGCCTCTTGCTTTCAGACTTGCCis smaller than 25 base pairs, skipping
+Sequence: GAACTGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGCCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATTAAGGCCAATTGGTGAATTTGis smaller than 25 base pairs, skipping
+Sequence: AGGGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGACCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTTGATGCTGCTCATGTTTTGAAGis smaller than 25 base pairs, skipping
+Sequence: AGTCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTGGGCAGCTTGGTCCACAGis smaller than 25 base pairs, skipping
+Sequence: CACTTATAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCTGGGAATACGTGGGAGCGGGis smaller than 25 base pairs, skipping
+Sequence: CCAGAACTACGTGAGTTTTGAGTTis smaller than 25 base pairs, skipping
+Sequence: TCCAATTGTAGACCCCCCCCCis smaller than 25 base pairs, skipping
+Sequence: GCCGTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACAGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CACGTTAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCCCCCCCCCCCCCCCCCCCCis smaller than 25 base pairs, skipping
+Sequence: CGGGTTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CACAGTTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATCCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ATCCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCCGCTGGCACCTTATGAGAis smaller than 25 base pairs, skipping
+Sequence: TACTAATGGGGCTTTAAGTTGGTAis smaller than 25 base pairs, skipping
+Sequence: GGGTAACAATATATAAAGAGis smaller than 25 base pairs, skipping
+Sequence: TCGGTGCAGTGTTCGGCGTGCGis smaller than 25 base pairs, skipping
+Sequence: CGGCTTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTACGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGCTGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TAAACGCGAATGACAACAGTAGCis smaller than 25 base pairs, skipping
+Sequence: GAGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGAGTAGGCAAGAGACAACCTGGCis smaller than 25 base pairs, skipping
+Sequence: CACCTCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCGGGGTTTTGGAATGTTGTTTGis smaller than 25 base pairs, skipping
+Sequence: GCCGCTTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GATTTAGATGGTTTTTAAGGTTTis smaller than 25 base pairs, skipping
+Sequence: AACCAACGCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACTTGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAGAAGTCTGATGCTGCAGGis smaller than 25 base pairs, skipping
+Sequence: CGCAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AATTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTGGAAATGTTATTATTTTAGCAis smaller than 25 base pairs, skipping
+Sequence: CGGTCGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACTCCCCCCCCCCCCCCCCCCis smaller than 25 base pairs, skipping
+Sequence: CAGTGGCTACAGTGGGTGGTTTGCis smaller than 25 base pairs, skipping
+Sequence: CAGGACAAGCAACTGCAGGACTAAis smaller than 25 base pairs, skipping
+Sequence: TTACTAGCCTAAGGTATTTTTTTTis smaller than 25 base pairs, skipping
+Sequence: CGGTGTGTTCGAGAGTATTCis smaller than 25 base pairs, skipping
+Sequence: CAACGATGCCGACCCGGGATis smaller than 25 base pairs, skipping
+Sequence: TGCTGGCCTTTCAAGCAGGAACCCis smaller than 25 base pairs, skipping
+Sequence: ACCGCCTTACTCCTCGACGAAGTis smaller than 25 base pairs, skipping
+Sequence: CTCGCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCGTTTTGGCACTACTGTTTCATGis smaller than 25 base pairs, skipping
+Sequence: GTATGTCCGTTGTCACCTTTCAGis smaller than 25 base pairs, skipping
+Sequence: TGAAGAACTCGCTTCCAATCACACis smaller than 25 base pairs, skipping
+Sequence: ATTTTTTCGGGGGGGGGGTGGis smaller than 25 base pairs, skipping
+Sequence: GCCCCCCCCCCCCCCCCTTTTTTGis smaller than 25 base pairs, skipping
+Sequence: GGTACCAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: CGTGAAGGTTGGGGTCTTACTTGGis smaller than 25 base pairs, skipping
+Sequence: ATCAGAACTACGTGAGCTTTGis smaller than 25 base pairs, skipping
+Sequence: GGGCTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTAATGCCGACCAGGGATCAGCGis smaller than 25 base pairs, skipping
+Sequence: ATATCCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGTGTCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACGAGCCCCCCTTTTTTTAATGAis smaller than 25 base pairs, skipping
+Sequence: AGTATGGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGCAACAAAGATTTAAGGCGACCGis smaller than 25 base pairs, skipping
+Sequence: CAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AAGCAGACGTCTGAACAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CGCTGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GAAGGATTCTTTATATTTTTGGGis smaller than 25 base pairs, skipping
+Sequence: GAAGGATTCTTTATATTTTTTGGTis smaller than 25 base pairs, skipping
+Sequence: TGGGGGCTCGAAGACGTTCAGAGis smaller than 25 base pairs, skipping
+Sequence: GCAAGGCTGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCTGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCTACTCGAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACGACCGACCAGGGATCAGCGis smaller than 25 base pairs, skipping
+Sequence: TCGCGGGCTAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCAAACAACAACAACAAAATTGAGis smaller than 25 base pairs, skipping
+Sequence: TTGTTATCGCCCTACACATGGAis smaller than 25 base pairs, skipping
+Sequence: TTTGTGTGGGAATAGGTCTGis smaller than 25 base pairs, skipping
+Sequence: TTTACATTTCCTTGAGTGTTGis smaller than 25 base pairs, skipping
+Sequence: TGATGTTTTTGTGTTTATGTAAis smaller than 25 base pairs, skipping
+Sequence: GATTGGGGGCTCGAAGACAATCAGis smaller than 25 base pairs, skipping
+Sequence: AGTACTGCCAAGAAATTAATTATAis smaller than 25 base pairs, skipping
+Sequence: ACAGGACCGTCGGGGGCATTCGTis smaller than 25 base pairs, skipping
+Sequence: GAAGGATTCTTTATATTTTTTGGis smaller than 25 base pairs, skipping
+Sequence: TCAAGGCTGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTTTTTTTTTTTTTTTTGAACCCCis smaller than 25 base pairs, skipping
+Sequence: GGGTGCAAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: AAGTGGTTGATGTTAATTGGGis smaller than 25 base pairs, skipping
+Sequence: GAGGCCGACCAGGGATCAGCCis smaller than 25 base pairs, skipping
+Sequence: ATTGGAGAGAGGGTCATCTCTTCTis smaller than 25 base pairs, skipping
+Sequence: CCTATAAAGCACGGAATTATGAAAis smaller than 25 base pairs, skipping
+Sequence: ACACTCGCAGACGATCAGATGCCGis smaller than 25 base pairs, skipping
+Sequence: CAAACTGATACATTAAATCAAATis smaller than 25 base pairs, skipping
+Sequence: CAGCGCGCTTGGTCTATTCGGTGis smaller than 25 base pairs, skipping
+Sequence: CCTACTCGAAAAAAAAAAAAAAAGis smaller than 25 base pairs, skipping
+Sequence: GACAAGGCCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CTTGCATGATATTTCTGTGTCTGTis smaller than 25 base pairs, skipping
+Sequence: TGGGCTCGAAGACGAGCAGATAGis smaller than 25 base pairs, skipping
+Sequence: CTTGGAGGTTGCTGTTGAATCCGGis smaller than 25 base pairs, skipping
+Sequence: TCGTTTCCAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GGCCGGGTCGTGCCTCCGGCGis smaller than 25 base pairs, skipping
+Sequence: TATTTGTGTTGTTGTATTTTTAis smaller than 25 base pairs, skipping
+Sequence: TTAAGTCGAAGGGGTGACGTTAAis smaller than 25 base pairs, skipping
+Sequence: ACAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGACGGTGTGGTTATGGGTGTis smaller than 25 base pairs, skipping
+Sequence: TAAGGTGGTGGCCATGGCGGACACis smaller than 25 base pairs, skipping
+Sequence: GTCGGATGGTTTTCTTGTTTGTTGis smaller than 25 base pairs, skipping
+Sequence: GTTGGAGGGGTTCAAGGCACAis smaller than 25 base pairs, skipping
+Sequence: GAGACCCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGATGAACAGATTGAAGAAGGis smaller than 25 base pairs, skipping
+Sequence: TGAGGCATTGATTATGTACACCis smaller than 25 base pairs, skipping
+Sequence: TGTCATTGTAATTTTGTAGACTTGis smaller than 25 base pairs, skipping
+Sequence: AACGCCGACCAGGGATCAGCGGAis smaller than 25 base pairs, skipping
+Sequence: GTCCGACCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGCGCACGGGTTGCAAGAGGCTGAis smaller than 25 base pairs, skipping
+Sequence: CAGCACCCCACGACGCTCTTCis smaller than 25 base pairs, skipping
+Sequence: TGTAGTAGGCTTTTTAAGTGCGis smaller than 25 base pairs, skipping
+Sequence: GCGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TCACCTAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGGGGGTATGTGTATAGTGCATis smaller than 25 base pairs, skipping
+Sequence: TGAACGAAGCCGACCAGGGATCis smaller than 25 base pairs, skipping
+Sequence: CGTGTCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTGGGTTTTACTTGTGTCTCACAis smaller than 25 base pairs, skipping
+Sequence: CGGTGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GCAGGCGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTAGGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CAACACGTGAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTGCGCAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: ACCACTGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TTGTTTTCCAACTACTAATCAAACis smaller than 25 base pairs, skipping
+Sequence: CGTTCCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TACAAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: CCTTTATCTTTGGTGGCTTTGis smaller than 25 base pairs, skipping
+Sequence: CAGGCAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TGTTCCGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: TATGGCTAAAAAAAAAAAAAAGAis smaller than 25 base pairs, skipping
+Sequence: AATTGTTGCTTGTTCAGTTAGCATis smaller than 25 base pairs, skipping
+Sequence: CTGATGCTGCTCAGGTGTTGAAGGis smaller than 25 base pairs, skipping
+Sequence: CCTTCGGGAGCCCCAATTATCTTis smaller than 25 base pairs, skipping
+Sequence: GACCATCATGGCTCCTCTCCTCis smaller than 25 base pairs, skipping
+Sequence: AGGCTGGAAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: GTTCCACAAAAAAAAAAAAAAAAis smaller than 25 base pairs, skipping
+Sequence: AGGATCTGTTATGGTGGAAGGGAGis smaller than 25 base pairs, skipping
+Sequence: GAAAAAAGGCGTGTAAATGGAis smaller than 25 base pairs, skipping
+Sequence: GGTTGCGGGGCTCAAACGGCCAAis smaller than 25 base pairs, skipping
+Sequence: CATCATCATAGCAACCTTGTAACis smaller than 25 base pairs, skipping
+Sequence: TGGCTGATCCATGGCACAACAACAis smaller than 25 base pairs, skipping
+Sequence: TCTCGTACTATATACTATACTATCis smaller than 25 base pairs, skipping
+Sequence: CCTATTGTGTTGGCCTTCGGGis smaller than 25 base pairs, skipping
+Sequence: TGTTATGTCAATGTTTTATAis smaller than 25 base pairs, skipping
+Sequence: TAGCTGCCGACCAGGGATCAGCGis smaller than 25 base pairs, skipping
+Sequence: TTATCGCTGCTGGGTTGGCCGTCGis smaller than 25 base pairs, skipping
+Sequence: ATAGATCGGTCCGCCTCTGGTGTGis smaller than 25 base pairs, skipping
+Sequence: GCTGCTGGGTTGGCCGTCGGACis smaller than 25 base pairs, skipping
+Sequence: GAGAACTAGCCGTTCCTTTAis smaller than 25 base pairs, skipping
+Sequence: CGGTAAAATTTTAACTAAGAATTCis smaller than 25 base pairs, skipping
+Sequence: AACGAACCCCCCCTTTTTTTATGCis smaller than 25 base pairs, skipping
+Sequence: AAAGTTTGCGGAGGACACTGCAGGis smaller than 25 base pairs, skipping
+Sequence: CGAGTTTCTTAACGGTTTGGis smaller than 25 base pairs, skipping
+Sequence: AGAAGTGTTGGAGATGGCATGAis smaller than 25 base pairs, skipping
+Sequence: TTTTTTTTTTTTTTTTTTACCCTis smaller than 25 base pairs, skipping
+Sequence: TATGCGGCTGTGTTACTGAAAAis smaller than 25 base pairs, skipping
+Sequence: TATGCGGCTGTGTTACTGAAAAATis smaller than 25 base pairs, skipping
+Sequence: ACTGGCTTTTGGTAGTATTTTTis smaller than 25 base pairs, skipping
+Sequence: AACACAACTTGGCCGAAAGGGTTGis smaller than 25 base pairs, skipping
+Sequence: GAGGGGTACTTTATTACTTAGTCTis smaller than 25 base pairs, skipping
+Sequence: TACCAACTTGGATTTTTATGGTGis smaller than 25 base pairs, skipping
+Sequence: GTCATCAGGCTGGTTCGGATAGGTis smaller than 25 base pairs, skipping

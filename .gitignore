@@ -1,0 +1,15 @@
+#ignore .DS_Store
+.DS_Store
+
+#ignore ipynb checkpoints
+
+*/.ipynb_checkpoints/*
+.ipynb_checkpoints/*
+
+#ignore anything big
+*.fastq
+*.fasta
+*.fq
+*.fa
+*.gz
+*.sra

@@ -1,0 +1,55 @@
+#!/bin/bash
+#SBATCH -A loni_pgtrain3
+#SBATCH -p workq
+#SBATCH -t 72:00:00
+#SBATCH -N 1
+#SBATCH -n 48
+#SBATCH -o slurm-%j.out-%N
+#SBATCH -e slurm-%j.err-%N
+#job starts here
+date
+echo "job started!"
+echo "loading modules!"
+module list
+echo " "
+echo "currently in $PWD"
+echo "moving to /work/mjfos2r/denovo/trinity/trinity_rRNA_culled/kallisto"
+cd /ddnA/work/mjfos2r/denovo/trinity/trinity_rRNA_culled/kallisto
+echo "currently in: $PWD"
+echo " "
+echo "setting kallisto output directory"
+export KALLISTO_OUT=/ddnA/work/mjfos2r/denovo/trinity/trinity_rRNA_culled/kallisto
+echo "KALLISTO_OUT = $KALLISTO_OUT"
+echo " "
+echo "starting kallisto index"
+kallisto index -i ../clustering/centroids.fasta.index ../clustering/centroids.fasta
+echo "index complete!"
+echo " "
+echo "setting kallistoindex variable to /ddnA/work/mjfos2r/denovo/trinity/first_assembly/kallisto/centroids.fasta.index"
+export KALLISTOINDEX=/ddnA/work/mjfos2r/denovo/trinity/trinity_rRNA_culled/clustering/centroids.fasta.index
+echo "KALLISTOINDEX = $KALLISTOINDEX"
+echo " "
+echo "moving to //ddnA/work/mjfos2r/fastq/trimmed_1"
+cd /ddnA/work/mjfos2r/fastq/trimmed_1
+echo "currently in: $PWD"
+echo " "
+echo "beginning kallisto quant loop!"
+date
+for i in trimmed.*.fq.gz
+do
+echo "starting kallisto quant on read ${i}"
+kallisto quant -i $KALLISTOINDEX \
+-o $KALLISTO_OUT/${i} \
+-t 48 \
+--single -l 150 -s 20 \
+${i}
+echo " "
+echo "Sample Done! continuing loop onto next sample!"
+echo " "
+done
+echo "Kallisto Quant complete!"
+echo "be sure to run NOISeq, Gfold, and DESeq2 next!"
+echo " "
+echo "Job Complete!"
+date
+exit 0

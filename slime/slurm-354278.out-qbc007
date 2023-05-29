@@ -1,0 +1,480 @@
+sourcing ~/.bashrc so conda will work!!
+Tue May 23 13:54:43 CDT 2023
+Job Started!
+ 
+loading modules
+currently in: /home/mjfos2r/clover_project/big_transcriptome_attempt
+ 
+moving to /work/mjfos2r to begin work.
+currently in /work/mjfos2r
+activating conda env hisat2
+moving to big_transcriptome_attempt to begin batch download of SRRs from NCBI
+currently in /work/mjfos2r/big_transcriptome_attempt
+Tue May 23 13:54:43 CDT 2023
+beginning batch download of SRRs from NCBI
+Donwloading SRR12578105
+
+Donwloading SRR12578106
+
+Donwloading SRR12578107
+
+Donwloading SRR12578108
+
+Donwloading SRR12578109
+
+Donwloading SRR12578110
+
+Donwloading SRR12578111
+
+Donwloading SRR12578112
+
+Donwloading SRR12578113
+
+Donwloading SRR12578114
+
+Donwloading SRR12578115
+
+Donwloading SRR12578116
+
+Donwloading SRR12578117
+
+Donwloading SRR12578118
+
+Donwloading SRR12578119
+
+Donwloading SRR12578120
+
+Donwloading SRR12578121
+
+Donwloading SRR12578122
+
+Donwloading SRR12578123
+
+Donwloading SRR12578124
+
+Donwloading SRR12578125
+
+Donwloading SRR12578126
+
+Donwloading SRR12578127
+
+Donwloading SRR12578128
+
+Donwloading SRR12578129
+
+Donwloading SRR12578130
+
+Donwloading SRR12578131
+
+Donwloading SRR12578132
+
+Donwloading SRR12578133
+
+Donwloading SRR12578134
+
+Donwloading SRR12578135
+
+Donwloading SRR12578136
+
+Donwloading SRR12578137
+
+Donwloading SRR12578138
+
+Donwloading SRR12578139
+
+Donwloading SRR12578140
+
+Donwloading SRR12578141
+
+Donwloading SRR12578142
+
+Donwloading SRR12578143
+
+Donwloading SRR12578144
+
+Donwloading SRR12578145
+
+Donwloading SRR12578146
+
+Donwloading SRR12578147
+
+Donwloading SRR12578148
+
+Donwloading SRR12578149
+
+Donwloading SRR12578150
+
+Donwloading SRR12578151
+
+Donwloading SRR12578152
+
+Donwloading SRR12578153
+
+Donwloading SRR12578154
+
+Donwloading SRR12578155
+
+Donwloading SRR12578156
+
+Donwloading SRR12578157
+
+Donwloading SRR12578158
+
+Donwloading SRR12578159
+
+Donwloading SRR12578160
+
+Donwloading SRR12578161
+
+Donwloading SRR12578162
+
+Donwloading SRR12578163
+
+Donwloading SRR12578164
+
+Donwloading SRR12578165
+
+Donwloading SRR12578166
+
+Donwloading SRR12578167
+
+Donwloading SRR12578168
+
+Donwloading SRR12578169
+
+Donwloading SRR12578170
+
+Donwloading SRR12578171
+
+Donwloading SRR12578172
+
+Donwloading SRR12578173
+
+Donwloading SRR12578174
+
+Donwloading SRR12578175
+
+Donwloading SRR12578176
+
+Donwloading SRR12578177
+
+Donwloading SRR12578178
+
+Donwloading SRR12578179
+
+Donwloading SRR12578180
+
+Donwloading SRR12578181
+
+Donwloading SRR12578182
+
+Donwloading SRR12578183
+
+Donwloading SRR12578184
+
+Donwloading SRR12578185
+
+Donwloading SRR12578186
+
+Donwloading SRR12578187
+
+Donwloading SRR12578188
+
+Donwloading SRR12578189
+
+Donwloading SRR12578190
+
+Donwloading SRR12578191
+
+Donwloading SRR12578192
+
+Donwloading SRR12578193
+
+Donwloading SRR12578194
+
+Donwloading SRR12578195
+
+Donwloading SRR12578196
+
+Donwloading SRR12578197
+
+Donwloading SRR12578198
+
+Donwloading SRR12578199
+
+Donwloading SRR12578200
+
+Donwloading SRR12578201
+
+Donwloading SRR12578202
+
+Donwloading SRR12578203
+
+Donwloading SRR12578204
+
+Donwloading SRR12578205
+
+Donwloading SRR12578206
+
+Donwloading SRR12578207
+
+Donwloading SRR12578208
+
+Donwloading SRR12578209
+
+Donwloading SRR12578210
+
+Donwloading SRR12578211
+
+Donwloading SRR12578212
+
+Donwloading SRR12578213
+
+Donwloading SRR12578214
+
+Donwloading SRR12578215
+
+Donwloading SRR12578216
+
+Donwloading SRR12578217
+
+Donwloading SRR12578218
+
+Donwloading SRR12578219
+
+Donwloading SRR12578220
+
+Donwloading SRR12578221
+
+Donwloading SRR12578222
+
+Donwloading SRR12578223
+
+Donwloading SRR12578224
+
+Donwloading SRR12578225
+
+Donwloading SRR12578226
+
+Donwloading SRR12578227
+
+Donwloading SRR12578228
+
+Donwloading SRR12578229
+
+Donwloading SRR12578230
+
+Donwloading SRR12578231
+
+Donwloading SRR12578232
+
+Donwloading SRR12578233
+
+Donwloading SRR12578234
+
+Donwloading SRR12578235
+
+Donwloading SRR12578236
+
+Donwloading SRR12578237
+
+Donwloading SRR12578238
+
+Donwloading SRR12578239
+
+Donwloading SRR12578240
+
+Donwloading SRR12578241
+
+Donwloading SRR12578242
+
+Donwloading SRR12578243
+
+Donwloading SRR12578244
+
+Donwloading SRR12578245
+
+Donwloading SRR12578246
+
+Donwloading SRR12578247
+
+Donwloading SRR12578248
+
+Donwloading SRR12578249
+
+Donwloading SRR12578250
+
+Donwloading SRR12578251
+
+Donwloading SRR12578252
+
+Donwloading SRR12578253
+
+Donwloading SRR12578254
+
+Donwloading SRR12578255
+
+Donwloading SRR12578<t_co>
+
+Donwloading SRR12578257
+
+Donwloading SRR12578258
+
+Donwloading SRR12578259
+
+Donwloading SRR12578260
+
+Donwloading SRR12578261
+
+Donwloading SRR12578262
+
+Donwloading SRR12578263
+
+Donwloading SRR12578264
+
+Donwloading SRR12578265
+
+Donwloading SRR12578266
+
+Donwloading SRR12578267
+
+Donwloading SRR12578268
+
+Donwloading SRR12578269
+
+Donwloading SRR12578270
+
+Donwloading SRR12578271
+
+Donwloading SRR12578272
+
+Donwloading SRR12578273
+
+Donwloading SRR12578274
+
+Donwloading SRR12578275
+
+Donwloading SRR12578276
+
+Donwloading SRR12578277
+
+Donwloading SRR12578278
+
+Donwloading SRR12578279
+
+Donwloading SRR12578280
+
+Donwloading SRR12578281
+
+Donwloading SRR12578282
+
+Donwloading SRR12578283
+
+Donwloading SRR12578284
+
+Donwloading SRR12578285
+
+Donwloading SRR12578286
+
+Donwloading SRR12578287
+
+Donwloading SRR12578288
+
+Donwloading SRR12578289
+
+Donwloading SRR12578290
+
+Donwloading SRR8691037
+
+Donwloading SRR8691038
+
+Donwloading SRR8691039
+
+Donwloading SRR8693957
+
+Donwloading SRR8693958
+
+Donwloading SRR8693959
+
+Donwloading SRR8693960
+
+Donwloading SRR8693961
+
+Donwloading SRR8693962
+
+Donwloading SRR8693963
+
+Donwloading SRR8693964
+
+Donwloading SRR8693965
+
+Donwloading SRR8693966
+
+Donwloading SRR8693967
+
+Donwloading SRR8693968
+
+Donwloading SRR8691040
+
+Donwloading SRR8691836
+
+Donwloading SRR8691837
+
+Donwloading SRR8691838
+
+Donwloading SRR8691839
+
+Donwloading SRR8691840
+
+Donwloading SRR8691841
+
+Donwloading SRR8691842
+
+Donwloading SRR8691843
+
+Donwloading SRR8691844
+
+Donwloading SRR8691845
+
+Donwloading SRR8691846
+
+Donwloading SRR8691847
+
+Donwloading SRR21383273
+
+Donwloading SRR21383274
+
+Donwloading SRR21383275
+
+Donwloading SRR21383276
+
+Donwloading SRR21383277
+
+Donwloading SRR21383278
+
+Donwloading SRR20706440
+
+Donwloading SRR20706441
+
+Donwloading SRR20706442
+
+Donwloading SRR20706443
+
+Donwloading SRR20706444
+
+Donwloading SRR20706445
+
+Donwloading SRR5814845
+
+Donwloading SRR5814846
+
+Donwloading SRR5814847
+
+Donwloading SRR5814848
+
+Donwloading SRR5814849
+
+Donwloading SRR5814850
+
+complete!
+Tue May 23 13:55:13 CDT 2023

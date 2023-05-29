@@ -1,0 +1,33 @@
+#!/bin/bash
+#SBATCH -A loni_pgtrain3
+#SBATCH -p checkpt
+#SBATCH -N 1
+#SBATCH -n 48
+#SBATCH -t 72:00:00
+#SBATCH -o slurm-%j.out-%N
+#SBATCH -e slurm-%j.err-%N
+#job starts below
+echo "sourcing ~/.bashrc so conda will work!!"
+source ~/.bashrc
+date
+echo "Job Started!"
+echo " "
+echo "loading modules"
+module load samtools/1.10/intel-19.0.5
+module list
+echo "currently in: $PWD"
+echo " "
+echo "moving to /work/mjfos2r to begin work."
+cd /work/mjfos2r/
+echo "currently in $PWD"
+echo "activating conda env hisat2"
+conda activate hisat2
+echo "moving to big_transcriptome_attempt to begin batch download of SRRs from NCBI"
+cd big_transcriptome_attempt
+echo "currently in $PWD"
+date
+echo "beginning batch download of SRRs from NCBI"
+python3 batch_download_SRRs.py
+echo "complete!"
+date
+exit 0

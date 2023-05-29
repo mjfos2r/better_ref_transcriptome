@@ -1,0 +1,48 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -n 48
+#SBATCH -t 72:00:00
+#SBATCH -p checkpt
+#SBATCH -A loni_pgtrain3
+#SBATCH -o slurm-%j.out-%N
+#SBATCH -e slurm-%j.err-%N
+#job starts here
+date 
+echo "Job started!"
+echo " "
+echo "loading modules"
+echo " "
+module load r/4.0.3/intel-19.0.5
+module load hmmer/3.3/intel-19.0.5 
+module list
+echo " "
+echo "currently in: $PWD"
+echo "moving to /work/mjfos2r/denovo/trinity/trinity_rRNA_culled/codingregions"
+cd /ddnA/work/mjfos2r/denovo/trinity/trinity_rRNA_culled/codingregions
+echo " "
+echo "currently in: $PWD"
+echo " "
+date
+echo "running Transdecoder.LongOrfs -t on the trinity assembly."
+TransDecoder.LongOrfs -t ../Trinity.fasta
+echo ""
+date
+echo "LongOrfs command done!"
+echo " "
+echo "now running hmmscan using 96 cores to create pfam.domtblout using pfam-a.hmm db"
+hmmscan --cpu 48 --domtblout pfam.domtblout \
+/ddnA/work/mjfos2r/databases/hmmer-db/Pfam-A.hmm \
+Trinity.fasta.transdecoder_dir/longest_orfs.pep
+echo " "
+echo "HMMSCAN DONE!"
+date
+echo "now running Transdecoder.Predict on the Trinity.fasta file using pfam.domtblout to retain hits!"
+TransDecoder.Predict -t ../Trinity.fasta \
+--retain_pfam_hits pfam.domtblout \
+--cpu 48
+echo " "
+echo "Transdecoder.Predict is complete!"
+date
+echo "Job Done!"
+date
+exit 0

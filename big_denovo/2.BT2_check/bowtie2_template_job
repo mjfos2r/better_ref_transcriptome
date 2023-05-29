@@ -1,0 +1,61 @@
+#!/bin/bash
+#SBATCH -N 1 
+#SBATCH -n 48
+#SBATCH -t 72:00:00
+#SBATCH -p checkpt
+#SBATCH -A loni_pgtrain3
+#SBATCH -o slurm-%j.out-%N
+#SBATCH -e slurm-%j.err-%N
+#SBATCH --mail-user mfo010@email.latech.edu
+#SBATCH --mail-type ALL
+#job start
+date
+echo "Job started!"
+echo " "
+echo "Loading Modules"
+module load bowtie2/2.3.5.1/gcc-9.3.0
+module load samtools/1.10/intel-19.0.5
+module list
+echo "Currently in: $PWD"
+echo " "
+echo "setting bt2outdir to /work/mjfos2r/denovo/trinity/trinity_rRNA_culled/bt2-check"
+export bt2outdir=/work/mjfos2r/denovo/trinity/trinity_rRNA_culled/bt2-check
+echo "bt2outdir= $bt2outdir"
+echo " "
+echo "Moving to /work/mjfos2r/trinity/trinity_highdupes_att2"
+cd /work/mjfos2r/denovo/trinity/trinity_rRNA_culled
+echo "currently in: $PWD"
+echo " "
+echo "building bowtie index."
+echo "bowtie2-build Trinity.fasta Trinity.fasta"
+bowtie2-build --threads 48 Trinity.fasta Trinity_bt2
+echo " "
+echo "index done!"
+echo " "
+echo "moving to /work/mjfos2r/denovo/bowtie2_rRNA_out"
+cd /work/mjfos2r/denovo/bowtie2_rRNA_out
+echo "currently in: $PWD"
+echo " "
+echo "beginning loop to align forward reads against the trinity transcriptome"
+
+for i in whitelisted_trimmed.TR*.fq.gz
+do
+ echo "aligning ${i} against trinity.fasta"
+ bowtie2 -p 48 --threads 48 --no-unal -k 20 -x /work/mjfos2r/denovo/trinity/trinity_rRNA_culled/Trinity_bt2 -U ${i} \
+ 2>$bt2outdir/align_stats_${i}.txt | samtools view -@10 -Sb -o $bt2outdir/${i}_bowtie2.bam
+ echo " "
+ echo "Now running samtools sort!"
+ echo " "
+ samtools sort -@ 48 $bt2outdir/${i}_bowtie2.bam -o $bt2outdir/${i}.coordSorted.bam
+ echo "sort done!, now performing index!"
+ echo " "
+ samtools index -@ 48 $bt2outdir/${i}.coordSorted.bam
+ echo "index done!"
+ echo "done aligning, sorting, and indexing! continuing loop for next sample!"
+ echo " " 
+done
+
+echo "Loop Done!"
+echo "Job Done!"
+date
+exit 0

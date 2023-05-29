@@ -1,0 +1,42 @@
+#!/bin/bash
+#SBATCH -A loni_pgtrain3
+#SBATCH -p checkpt
+#SBATCH -N 1
+#SBATCH -n 48
+#SBATCH -t 72:00:00
+#SBATCH -o slurm-%j.out-%N
+#SBATCH -e slurm-%j.err-%N
+#job starts below
+echo "sourcing ~/.bashrc so conda will work!!"
+source ~/.bashrc
+date
+echo "Job Started!"
+echo " "
+module list
+echo "currently in: $PWD"
+echo " "
+echo "moving to /work/mjfos2r to begin work."
+cd /work/mjfos2r/
+echo "currently in $PWD"
+echo "activating conda env QC to use fastqc and multiqc"
+conda activate QC
+echo "moving to big_transcriptome_attempt to begin fastQC and multiQC of the downloaded sequencing files"
+cd big_transcriptome_attempt
+echo "currently in $PWD"
+echo "checking to see if the reports directory and reports/fastqc and reports/multiqc exist, creating them if absent."
+mkdir -p reports reports/fastqc reports/multiqc
+echo "setting FASTQCREPS and MULTIQCREP variables for the QC loop"
+export FASTQCREPS=/ddnA/work/mjfos2r/big_transcriptome_attempt/reports/fastqc
+echo "FASTQCREPS : $FASTQCREPS"
+export MULTIQCREP=/ddnA/work/mjfos2r/big_transcriptome_attempt/reports/multiqc
+echo "MULTIQCREP : $MULTIQCREP"
+echo ""
+date
+echo "now beginning fastqc on reads in fastq, outputting fastqc reports into $FASTQCREPS and creating a multiqc reportthat will be stored in $MULTIQCREP"
+for FILE in fastq/*.fastq.gz
+do
+  echo "starting fastQC of $FILE"
+	fastqc 
+echo "complete!"
+date
+exit 0

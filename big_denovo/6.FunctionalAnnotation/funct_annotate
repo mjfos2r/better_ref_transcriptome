@@ -1,0 +1,54 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -n 48
+#SBATCH -t 72:00:00
+#SBATCH -A loni_pgtrain3
+#SBATCH -p checkpt
+#SBATCH -o slurm-%j.out-%N
+#SBATCH -e slurm-%j.err-%N
+#SBATCH --mail-user mfo010@email.latech.edu
+#SBATCH --mail-type ALL
+#job starts below
+date
+echo "Job Started!"
+echo " "
+echo "loading modules"
+module load r/4.0.3/intel-19.0.5
+module load python/3.7.6
+module list
+echo "currently in: $PWD"
+echo " "
+echo "moving to /ddnA/work/mjfos2r/denovo/trinity/trinity_rRNA_culled/functional_annotation"
+cd /ddnA/work/mjfos2r/denovo/trinity/trinity_rRNA_culled/functional_annotation
+echo "currently in: $PWD"
+echo " "
+#echo "setting variables CENTROIDS and PEPTIDES"
+#echo " "
+#export CENTROIDS=/work/mjfos2r/denovo/trinity/trinity_rRNA_culled/clustering/centroids.fasta
+#echo "CENTROIDS SET TO: $CENTROIDS"
+#echo " "
+#export PEPTIDES=/work/mjfos2r/denovo/trinity/trinity_rRNA_culled/codingregions/Trinity.fasta.transdecoder.pep
+#echo "PEPTIDES SET TO: $PEPTIDES"
+#echo " "
+#echo "extracting peptide sequences from centroids and placing into names.txt"
+#echo "grep -oP '(?<=>).*' $CENTROIDS >names.txt"
+#grep -oP "(?<=>).*" $CENTROIDS >names.txt
+#echo " "
+#echo "running seqtk subseq against $PEPTIDES and names.txt"
+#echo "seqtk subseq $PEPTIDES names.txt | sed 's/ .*//' >centroids.pep"
+#seqtk subseq $PEPTIDES names.txt | sed 's/ .*//' >centroids.pep
+echo "currently in: $PWD"
+echo "running entap on the centroids.pep dataset that was generated."
+EnTAP --runP \
+--threads 48 \
+-i centroids.pep \
+-d /ddnA/work/mjfos2r/databases/diamond/databases/refseq_protein_complete_DB.dmnd \
+-d /ddnA/work/mjfos2r/databases/diamond/databases/refseq_plant_database.dmnd \
+-d /ddnA/work/mjfos2r/databases/diamond/databases/uniprot_sprot.dmnd \
+-d /ddnA/work/mjfos2r/databases/diamond/databases/nr.dmnd \
+--ini entap_config.ini
+echo " "
+echo "Job Complete!"
+echo " "
+date
+exit 0
