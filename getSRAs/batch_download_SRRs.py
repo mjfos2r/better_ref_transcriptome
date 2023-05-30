@@ -26,7 +26,7 @@ for sra_id in sra_numbers:
 
 for sra_id in sra_numbers:
 	print("generating fastq: " + sra_id)
-	fastq_dump = "parallel-fastq-dump --outdir /ddnA/mjfos2r/big_transcriptome_attempt/fastq --gzip --skip-technical --readids --read-filter pass --dumpbase --threads 48 --clip /ddna/mjfos2r/sratk-cache/sra/" + sra_id + ".sra"
+	fastq_dump = "parallel-fastq-dump -s " + sraPath + " -t 48 -O /ddnA/work/mjfos2r/big_transcriptome_attempt/fastq --read-filter pass --gzip --skip-technical --dumpbase --clip --defline-seq \'@$sn[_$rn]/$ri\' --split-files"
 	print('command executed: ' + fastq_dump)
 	subprocess.call(fastq_dump, shell=True)
 
