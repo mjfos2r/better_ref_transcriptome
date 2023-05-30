@@ -7,11 +7,13 @@ path2output='/ddnA/work/mjfos2r/big_transcriptome_attempt/metadata/'
 # set samples
 accessions_file = open('/ddnA/work/mjfos2r/big_transcriptome_attempt/textfiles/target_sorted.txt', 'r') # Open file of accession numbers, originally hendrickson_foster_RNASeq_NCBI.txt :)
 line = accessions_file.readline() # read in accession ids by line
-sra_numbers = []
+
+sra_numbers = [] # set empty list
+
 for line in accessions_file:
-		line = line.strip() # strip whitespace and EOL that causes malignant behavior
-		print(line) # print out each accession id
-		sra_numbers.append(line) # append line to sra_numbers
+        line = line.strip() # strip whitespace and EOL that causes malignant behavior
+        print(line) # print out each accession id
+        sra_numbers.append(line) # append line to sra_numbers
 accessions_file.close() # close file
 
 print(sra_numbers) # print list
@@ -19,18 +21,18 @@ print(sra_numbers) # print list
 metaDataFrame = pandas.DataFrame() # init empty dataframe for the following loop
 
 for sra_id in sra_numbers:
-		print("")
-		print("getting experiment metainfo for the following SRA file: " + sra_id)
-		print("")
-		getMeta = "esearch -db sra -query " + sra_id + " | efetch -format runinfo | tr \',\' \'\\t\' < /dev/stdin" # set command based on path to sra file downloaded with prefetch, translate to tsv
-		print('command executed: ' + getMeta)
-		outputMetaData = subprocess.run(getMeta, shell=True, capture_output=True, text=True) # set var to intake the translated tsv, call a shell subprocess and run the above command, capture the output as text and store in outMD
-		print("stdout below:")
-		print(outputMetaData.stdout) # print out the stdout which should be our translated TSV file :)
-		tsv_out = path2output + sra_id + "_metadata.tsv" # lets make the filename dep on iteration for this metadata:)
+	print("")
+	print("getting experiment metainfo for the following SRA file: " + sra_id)
+	print("")
+	getMeta = "esearch -db sra -query " + sra_id + " | efetch -format runinfo | tr \',\' \'\\t\' < /dev/stdin" # set command based on path to sra file downloaded with prefetch, translate to tsv
+	print('command executed: ' + getMeta)
+	outputMetaData = subprocess.run(getMeta, shell=True, capture_output=True, text=True) # set var to intake the translated tsv, call a shell subprocess and run the above command, capture the output as text and store in outMD
+	print("stdout below:")
+	print(outputMetaData.stdout) # print out the stdout which should be our translated TSV file :)
+	tsv_out = path2output + sra_id + "_metadata.tsv" # lets make the filename dep on iteration for this metadata:)
 
-		with open(tsv_out, 'w') as tsv: # open the above file for writing
-				tsv.write(outputMetaData.stdout) # write the tsv file:)
+	with open(tsv_out, 'w') as tsv: # open the above file for writing
+        	tsv.write(outputMetaData.stdout) # write the tsv file:)
 
 # okay now that we have all of our tsv files written, lets pull em back in with glob
 metadata_files = glob.glob(path2output + '*.tsv')
